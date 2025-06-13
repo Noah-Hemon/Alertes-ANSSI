@@ -3,7 +3,6 @@ import requests
 import re
 import time
 
-# Charger le CSV contenant les flux ANSSI extraits précédemment
 df_rss = pd.read_csv("data/raw_rss.csv")
 
 # Liste pour stocker les résultats enrichis
