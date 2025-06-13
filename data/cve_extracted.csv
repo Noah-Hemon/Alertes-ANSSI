@@ -1,0 +1,587 @@
+id_anssi,title,published,link,type,cve_id
+CERTFR-2022-ALE-007,Multiples vulnérabilités dans Microsoft Windows (16 septembre 2022),"Fri, 16 Sep 2022 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2022-ALE-007/,alerte,CVE-2022-34718
+CERTFR-2022-ALE-007,Multiples vulnérabilités dans Microsoft Windows (16 septembre 2022),"Fri, 16 Sep 2022 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2022-ALE-007/,alerte,CVE-2022-34721
+CERTFR-2022-ALE-007,Multiples vulnérabilités dans Microsoft Windows (16 septembre 2022),"Fri, 16 Sep 2022 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2022-ALE-007/,alerte,CVE-2022-34722
+CERTFR-2022-ALE-008,[MaJ] Multiples vulnérabilités dans Microsoft Exchange (30 septembre 2022),"Fri, 30 Sep 2022 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2022-ALE-008/,alerte,CVE-2022-41040
+CERTFR-2022-ALE-008,[MaJ] Multiples vulnérabilités dans Microsoft Exchange (30 septembre 2022),"Fri, 30 Sep 2022 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2022-ALE-008/,alerte,CVE-2022-41082
+CERTFR-2022-ALE-014,Multiples vulnérabilités dans AMI MegaRAC (16 décembre 2022),"Fri, 16 Dec 2022 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2022-ALE-014/,alerte,CVE-2022-40242
+CERTFR-2022-ALE-014,Multiples vulnérabilités dans AMI MegaRAC (16 décembre 2022),"Fri, 16 Dec 2022 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2022-ALE-014/,alerte,CVE-2022-40259
+CERTFR-2022-ALE-014,Multiples vulnérabilités dans AMI MegaRAC (16 décembre 2022),"Fri, 16 Dec 2022 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2022-ALE-014/,alerte,CVE-2022-2827
+CERTFR-2023-ALE-015,[MàJ] Campagne d'exploitation d'une vulnérabilité affectant VMware ESXi (03 février 2023),"Fri, 03 Feb 2023 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-015/,alerte,CVE-2021-21974
+CERTFR-2023-ALE-015,[MàJ] Campagne d'exploitation d'une vulnérabilité affectant VMware ESXi (03 février 2023),"Fri, 03 Feb 2023 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-015/,alerte,CVE-2020-3992
+CERTFR-2023-ALE-001,Vulnérabilité dans Fortinet FortiOS (14 mars 2023),"Tue, 14 Mar 2023 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-001/,alerte,CVE-2022-41328
+CERTFR-2023-ALE-002,[MàJ] Vulnérabilité dans Microsoft Outlook (15 mars 2023),"Wed, 15 Mar 2023 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-002/,alerte,CVE-2023-23397
+CERTFR-2023-ALE-002,[MàJ] Vulnérabilité dans Microsoft Outlook (15 mars 2023),"Wed, 15 Mar 2023 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-002/,alerte,CVE-2023-29324
+CERTFR-2023-ALE-004,Vulnérabilité dans les produits Fortinet (13 juin 2023),"Tue, 13 Jun 2023 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-004/,alerte,CVE-2023-27997
+CERTFR-2023-ALE-005,Synthèse sur l'exploitation d'une vulnérabilité dans MOVEit Transfer (05 juillet 2023),"Wed, 05 Jul 2023 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-005/,alerte,CVE-2023-34362
+CERTFR-2023-ALE-005,Synthèse sur l'exploitation d'une vulnérabilité dans MOVEit Transfer (05 juillet 2023),"Wed, 05 Jul 2023 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-005/,alerte,CVE-2023-35036
+CERTFR-2023-ALE-005,Synthèse sur l'exploitation d'une vulnérabilité dans MOVEit Transfer (05 juillet 2023),"Wed, 05 Jul 2023 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-005/,alerte,CVE-2023-35708
+CERTFR-2023-ALE-006,Vulnérabilité dans les produits Microsoft (12 juillet 2023),"Wed, 12 Jul 2023 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-006/,alerte,CVE-2023-36884
+CERTFR-2023-ALE-007,[MàJ] Vulnérabilité dans Zimbra Collaboration Suite (17 juillet 2023),"Mon, 17 Jul 2023 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-007/,alerte,CVE-2023-37580
+CERTFR-2023-ALE-008,[MàJ] Vulnérabilité dans Citrix NetScaler ADC et NetScaler Gateway (19 juillet 2023),"Wed, 19 Jul 2023 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-008/,alerte,CVE-2023-3519
+CERTFR-2023-ALE-009,[MàJ] Multiples vulnérabilités dans Ivanti Endpoint Manager Mobile (26 juillet 2023),"Wed, 26 Jul 2023 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-009/,alerte,CVE-2023-35081
+CERTFR-2023-ALE-009,[MàJ] Multiples vulnérabilités dans Ivanti Endpoint Manager Mobile (26 juillet 2023),"Wed, 26 Jul 2023 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-009/,alerte,CVE-2023-35082
+CERTFR-2023-ALE-009,[MàJ] Multiples vulnérabilités dans Ivanti Endpoint Manager Mobile (26 juillet 2023),"Wed, 26 Jul 2023 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-009/,alerte,CVE-2023-35078
+CERTFR-2023-ALE-010,Multiples vulnérabilités dans Exim (02 octobre 2023),"Mon, 02 Oct 2023 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-010/,alerte,CVE-2023-42118
+CERTFR-2023-ALE-010,Multiples vulnérabilités dans Exim (02 octobre 2023),"Mon, 02 Oct 2023 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-010/,alerte,CVE-2023-42116
+CERTFR-2023-ALE-010,Multiples vulnérabilités dans Exim (02 octobre 2023),"Mon, 02 Oct 2023 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-010/,alerte,CVE-2023-42115
+CERTFR-2023-ALE-010,Multiples vulnérabilités dans Exim (02 octobre 2023),"Mon, 02 Oct 2023 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-010/,alerte,CVE-2023-42117
+CERTFR-2023-ALE-010,Multiples vulnérabilités dans Exim (02 octobre 2023),"Mon, 02 Oct 2023 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-010/,alerte,CVE-2023-42119
+CERTFR-2023-ALE-010,Multiples vulnérabilités dans Exim (02 octobre 2023),"Mon, 02 Oct 2023 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-010/,alerte,CVE-2023-42114
+CERTFR-2023-ALE-011,[MàJ] Multiples vulnérabilités dans Cisco IOS XE (17 octobre 2023),"Tue, 17 Oct 2023 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-011/,alerte,CVE-2023-20198
+CERTFR-2023-ALE-011,[MàJ] Multiples vulnérabilités dans Cisco IOS XE (17 octobre 2023),"Tue, 17 Oct 2023 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-011/,alerte,CVE-2023-20273
+CERTFR-2023-ALE-012,[MàJ] Vulnérabilité dans Citrix NetScaler ADC et NetScaler Gateway (23 octobre 2023),"Mon, 23 Oct 2023 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-012/,alerte,CVE-2023-4966
+CERTFR-2023-ALE-013,Vulnérabilité dans Apache Struts 2 (13 décembre 2023),"Wed, 13 Dec 2023 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-013/,alerte,CVE-2023-50164
+CERTFR-2024-ALE-001,[MàJ] Multiples vulnérabilités dans Ivanti Connect Secure et Policy Secure Gateways (11 janvier 2024),"Thu, 11 Jan 2024 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-001/,alerte,CVE-2023-46805
+CERTFR-2024-ALE-001,[MàJ] Multiples vulnérabilités dans Ivanti Connect Secure et Policy Secure Gateways (11 janvier 2024),"Thu, 11 Jan 2024 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-001/,alerte,CVE-2024-21887
+CERTFR-2024-ALE-001,[MàJ] Multiples vulnérabilités dans Ivanti Connect Secure et Policy Secure Gateways (11 janvier 2024),"Thu, 11 Jan 2024 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-001/,alerte,CVE-2024-21893
+CERTFR-2024-ALE-001,[MàJ] Multiples vulnérabilités dans Ivanti Connect Secure et Policy Secure Gateways (11 janvier 2024),"Thu, 11 Jan 2024 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-001/,alerte,CVE-2024-21888
+CERTFR-2024-ALE-001,[MàJ] Multiples vulnérabilités dans Ivanti Connect Secure et Policy Secure Gateways (11 janvier 2024),"Thu, 11 Jan 2024 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-001/,alerte,CVE-2024-22024
+CERTFR-2024-ALE-002,[MàJ] Multiples Vulnérabilités dans GitLab (12 janvier 2024),"Fri, 12 Jan 2024 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-002/,alerte,CVE-2024-0402
+CERTFR-2024-ALE-002,[MàJ] Multiples Vulnérabilités dans GitLab (12 janvier 2024),"Fri, 12 Jan 2024 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-002/,alerte,CVE-2023-7028
+CERTFR-2024-ALE-004,[MàJ] Vulnérabilité dans Fortinet FortiOS (09 février 2024),"Fri, 09 Feb 2024 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-004/,alerte,CVE-2024-21762
+CERTFR-2024-ALE-005,[MàJ] Vulnérabilité dans Microsoft Outlook (15 février 2024),"Thu, 15 Feb 2024 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-005/,alerte,CVE-2024-21413
+CERTFR-2024-ALE-006,[MàJ] Vulnérabilité dans Palo Alto Networks GlobalProtect (12 avril 2024),"Fri, 12 Apr 2024 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-006/,alerte,CVE-2024-3400
+CERTFR-2024-ALE-007,Multiples vulnérabilités dans les produits Cisco (25 avril 2024),"Thu, 25 Apr 2024 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-007/,alerte,CVE-2024-20353
+CERTFR-2024-ALE-007,Multiples vulnérabilités dans les produits Cisco (25 avril 2024),"Thu, 25 Apr 2024 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-007/,alerte,CVE-2024-20359
+CERTFR-2024-ALE-008,[MàJ] Vulnérabilité dans les produits Check Point  (30 mai 2024),"Thu, 30 May 2024 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-008/,alerte,CVE-2024-24919
+CERTFR-2024-ALE-009,Vulnérabilité dans OpenSSH (01 juillet 2024),"Mon, 01 Jul 2024 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-009/,alerte,CVE-2024-6387
+CERTFR-2024-ALE-010,Multiples vulnérabilités dans Roundcube (09 août 2024),"Fri, 09 Aug 2024 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-010/,alerte,CVE-2024-42009
+CERTFR-2024-ALE-010,Multiples vulnérabilités dans Roundcube (09 août 2024),"Fri, 09 Aug 2024 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-010/,alerte,CVE-2024-42008
+CERTFR-2024-ALE-010,Multiples vulnérabilités dans Roundcube (09 août 2024),"Fri, 09 Aug 2024 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-010/,alerte,CVE-2024-42010
+CERTFR-2024-ALE-011,Vulnérabilité dans SonicWall (10 septembre 2024),"Tue, 10 Sep 2024 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-011/,alerte,CVE-2024-40766
+CERTFR-2024-ALE-012,[MàJ] Vulnérabilités affectant OpenPrinting CUPS (27 septembre 2024),"Fri, 27 Sep 2024 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-012/,alerte,CVE-2024-47076
+CERTFR-2024-ALE-012,[MàJ] Vulnérabilités affectant OpenPrinting CUPS (27 septembre 2024),"Fri, 27 Sep 2024 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-012/,alerte,CVE-2024-47177
+CERTFR-2024-ALE-012,[MàJ] Vulnérabilités affectant OpenPrinting CUPS (27 septembre 2024),"Fri, 27 Sep 2024 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-012/,alerte,CVE-2024-47176
+CERTFR-2024-ALE-012,[MàJ] Vulnérabilités affectant OpenPrinting CUPS (27 septembre 2024),"Fri, 27 Sep 2024 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-012/,alerte,CVE-2024-47175
+CERTFR-2024-ALE-013,Exploitations de vulnérabilités dans Ivanti Cloud Services Appliance (CSA) (22 octobre 2024),"Tue, 22 Oct 2024 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-013/,alerte,CVE-2024-9380
+CERTFR-2024-ALE-013,Exploitations de vulnérabilités dans Ivanti Cloud Services Appliance (CSA) (22 octobre 2024),"Tue, 22 Oct 2024 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-013/,alerte,CVE-2024-8963
+CERTFR-2024-ALE-013,Exploitations de vulnérabilités dans Ivanti Cloud Services Appliance (CSA) (22 octobre 2024),"Tue, 22 Oct 2024 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-013/,alerte,CVE-2024-8190
+CERTFR-2024-ALE-014,[MàJ] Multiples vulnérabilités dans Fortinet FortiManager (23 octobre 2024),"Wed, 23 Oct 2024 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-014/,alerte,CVE-2024-50566
+CERTFR-2024-ALE-014,[MàJ] Multiples vulnérabilités dans Fortinet FortiManager (23 octobre 2024),"Wed, 23 Oct 2024 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-014/,alerte,CVE-2024-47575
+CERTFR-2024-ALE-015,[MàJ] Multiples vulnérabilités sur l'interface d'administration des équipements Palo Alto Networks (15 novembre 2024),"Fri, 15 Nov 2024 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-015/,alerte,CVE-2024-9474
+CERTFR-2024-ALE-015,[MàJ] Multiples vulnérabilités sur l'interface d'administration des équipements Palo Alto Networks (15 novembre 2024),"Fri, 15 Nov 2024 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2024-ALE-015/,alerte,CVE-2024-0012
+CERTFR-2025-ALE-001,[MàJ] Vulnérabilité dans les produits Ivanti (09 janvier 2025),"Thu, 09 Jan 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2025-ALE-001/,alerte,CVE-2025-0282
+CERTFR-2025-ALE-002,[MàJ] Vulnérabilité dans les produits Fortinet (14 janvier 2025),"Tue, 14 Jan 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2025-ALE-002/,alerte,CVE-2024-55591
+CERTFR-2025-ALE-003,[MàJ] Vulnérabilité dans les produits Ivanti (03 avril 2025),"Thu, 03 Apr 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2025-ALE-003/,alerte,CVE-2025-22457
+CERTFR-2025-ALE-005,Vulnérabilité dans SAP NetWeaver (28 avril 2025),"Mon, 28 Apr 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2025-ALE-005/,alerte,CVE-2025-31324
+CERTFR-2025-ALE-006,Vulnérabilité dans les produits Fortinet (13 mai 2025),"Tue, 13 May 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2025-ALE-006/,alerte,CVE-2025-32756
+CERTFR-2025-ALE-007,Multiples vulnérabilités dans Ivanti Endpoint Manager Mobile (EPMM) (14 mai 2025),"Wed, 14 May 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2025-ALE-007/,alerte,CVE-2025-4427
+CERTFR-2025-ALE-007,Multiples vulnérabilités dans Ivanti Endpoint Manager Mobile (EPMM) (14 mai 2025),"Wed, 14 May 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2025-ALE-007/,alerte,CVE-2025-4428
+CERTFR-2025-ALE-008,[MàJ] Vulnérabilité dans Roundcube (05 juin 2025),"Thu, 05 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2025-ALE-008/,alerte,CVE-2025-49113
+CERTFR-2025-AVI-0392,Multiples vulnérabilités dans Mattermost Server (13 mai 2025),"Tue, 13 May 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0392/,avis,CVE-2025-4128
+CERTFR-2025-AVI-0392,Multiples vulnérabilités dans Mattermost Server (13 mai 2025),"Tue, 13 May 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0392/,avis,CVE-2025-4573
+CERTFR-2025-AVI-0396,Multiples vulnérabilités dans les produits SAP (13 mai 2025),"Tue, 13 May 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0396/,avis,CVE-2025-43003
+CERTFR-2025-AVI-0396,Multiples vulnérabilités dans les produits SAP (13 mai 2025),"Tue, 13 May 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0396/,avis,CVE-2025-43007
+CERTFR-2025-AVI-0396,Multiples vulnérabilités dans les produits SAP (13 mai 2025),"Tue, 13 May 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0396/,avis,CVE-2025-23191
+CERTFR-2025-AVI-0396,Multiples vulnérabilités dans les produits SAP (13 mai 2025),"Tue, 13 May 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0396/,avis,CVE-2025-42999
+CERTFR-2025-AVI-0396,Multiples vulnérabilités dans les produits SAP (13 mai 2025),"Tue, 13 May 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0396/,avis,CVE-2025-43009
+CERTFR-2025-AVI-0396,Multiples vulnérabilités dans les produits SAP (13 mai 2025),"Tue, 13 May 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0396/,avis,CVE-2025-43011
+CERTFR-2025-AVI-0396,Multiples vulnérabilités dans les produits SAP (13 mai 2025),"Tue, 13 May 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0396/,avis,CVE-2025-43006
+CERTFR-2025-AVI-0396,Multiples vulnérabilités dans les produits SAP (13 mai 2025),"Tue, 13 May 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0396/,avis,CVE-2025-0060
+CERTFR-2025-AVI-0396,Multiples vulnérabilités dans les produits SAP (13 mai 2025),"Tue, 13 May 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0396/,avis,CVE-2025-30012
+CERTFR-2025-AVI-0396,Multiples vulnérabilités dans les produits SAP (13 mai 2025),"Tue, 13 May 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0396/,avis,CVE-2025-43000
+CERTFR-2025-AVI-0396,Multiples vulnérabilités dans les produits SAP (13 mai 2025),"Tue, 13 May 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0396/,avis,CVE-2025-43004
+CERTFR-2025-AVI-0396,Multiples vulnérabilités dans les produits SAP (13 mai 2025),"Tue, 13 May 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0396/,avis,CVE-2025-31324
+CERTFR-2025-AVI-0396,Multiples vulnérabilités dans les produits SAP (13 mai 2025),"Tue, 13 May 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0396/,avis,CVE-2025-43005
+CERTFR-2025-AVI-0396,Multiples vulnérabilités dans les produits SAP (13 mai 2025),"Tue, 13 May 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0396/,avis,CVE-2025-43008
+CERTFR-2025-AVI-0396,Multiples vulnérabilités dans les produits SAP (13 mai 2025),"Tue, 13 May 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0396/,avis,CVE-2025-31329
+CERTFR-2025-AVI-0396,Multiples vulnérabilités dans les produits SAP (13 mai 2025),"Tue, 13 May 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0396/,avis,CVE-2025-30009
+CERTFR-2025-AVI-0396,Multiples vulnérabilités dans les produits SAP (13 mai 2025),"Tue, 13 May 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0396/,avis,CVE-2025-30011
+CERTFR-2025-AVI-0396,Multiples vulnérabilités dans les produits SAP (13 mai 2025),"Tue, 13 May 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0396/,avis,CVE-2025-43002
+CERTFR-2025-AVI-0396,Multiples vulnérabilités dans les produits SAP (13 mai 2025),"Tue, 13 May 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0396/,avis,CVE-2025-26662
+CERTFR-2025-AVI-0396,Multiples vulnérabilités dans les produits SAP (13 mai 2025),"Tue, 13 May 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0396/,avis,CVE-2025-30010
+CERTFR-2025-AVI-0396,Multiples vulnérabilités dans les produits SAP (13 mai 2025),"Tue, 13 May 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0396/,avis,CVE-2025-42997
+CERTFR-2025-AVI-0396,Multiples vulnérabilités dans les produits SAP (13 mai 2025),"Tue, 13 May 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0396/,avis,CVE-2025-0061
+CERTFR-2025-AVI-0396,Multiples vulnérabilités dans les produits SAP (13 mai 2025),"Tue, 13 May 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0396/,avis,CVE-2025-43010
+CERTFR-2025-AVI-0396,Multiples vulnérabilités dans les produits SAP (13 mai 2025),"Tue, 13 May 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0396/,avis,CVE-2024-39592
+CERTFR-2025-AVI-0396,Multiples vulnérabilités dans les produits SAP (13 mai 2025),"Tue, 13 May 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0396/,avis,CVE-2025-30018
+CERTFR-2025-AVI-0469,Vulnérabilité dans les produits Synology (02 juin 2025),"Mon, 02 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0469/,avis,CVE-2025-5293
+CERTFR-2025-AVI-0470,Vulnérabilité dans les produits Moxa (02 juin 2025),"Mon, 02 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0470/,avis,CVE-2002-20001
+CERTFR-2025-AVI-0468,Vulnérabilité dans Roundcube (02 juin 2025),"Mon, 02 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0468/,avis,CVE-2025-49113
+CERTFR-2025-AVI-0471,Multiples vulnérabilités dans Google Chrome (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0471/,avis,CVE-2025-5419
+CERTFR-2025-AVI-0471,Multiples vulnérabilités dans Google Chrome (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0471/,avis,CVE-2025-5068
+CERTFR-2025-AVI-0472,Multiples vulnérabilités dans Google Android (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0472/,avis,CVE-2025-26443
+CERTFR-2025-AVI-0472,Multiples vulnérabilités dans Google Android (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0472/,avis,CVE-2025-26452
+CERTFR-2025-AVI-0472,Multiples vulnérabilités dans Google Android (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0472/,avis,CVE-2025-21485
+CERTFR-2025-AVI-0472,Multiples vulnérabilités dans Google Android (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0472/,avis,CVE-2025-26448
+CERTFR-2025-AVI-0472,Multiples vulnérabilités dans Google Android (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0472/,avis,CVE-2025-21424
+CERTFR-2025-AVI-0472,Multiples vulnérabilités dans Google Android (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0472/,avis,CVE-2025-26449
+CERTFR-2025-AVI-0472,Multiples vulnérabilités dans Google Android (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0472/,avis,CVE-2024-12576
+CERTFR-2025-AVI-0472,Multiples vulnérabilités dans Google Android (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0472/,avis,CVE-2025-26450
+CERTFR-2025-AVI-0472,Multiples vulnérabilités dans Google Android (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0472/,avis,CVE-2025-26437
+CERTFR-2025-AVI-0472,Multiples vulnérabilités dans Google Android (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0472/,avis,CVE-2025-25178
+CERTFR-2025-AVI-0472,Multiples vulnérabilités dans Google Android (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0472/,avis,CVE-2025-26463
+CERTFR-2025-AVI-0472,Multiples vulnérabilités dans Google Android (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0472/,avis,CVE-2024-53020
+CERTFR-2025-AVI-0472,Multiples vulnérabilités dans Google Android (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0472/,avis,CVE-2025-0819
+CERTFR-2025-AVI-0472,Multiples vulnérabilités dans Google Android (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0472/,avis,CVE-2025-26432
+CERTFR-2025-AVI-0472,Multiples vulnérabilités dans Google Android (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0472/,avis,CVE-2024-47893
+CERTFR-2025-AVI-0472,Multiples vulnérabilités dans Google Android (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0472/,avis,CVE-2025-0478
+CERTFR-2025-AVI-0472,Multiples vulnérabilités dans Google Android (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0472/,avis,CVE-2024-12837
+CERTFR-2025-AVI-0472,Multiples vulnérabilités dans Google Android (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0472/,avis,CVE-2024-53026
+CERTFR-2025-AVI-0472,Multiples vulnérabilités dans Google Android (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0472/,avis,CVE-2025-27029
+CERTFR-2025-AVI-0472,Multiples vulnérabilités dans Google Android (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0472/,avis,CVE-2025-0073
+CERTFR-2025-AVI-0472,Multiples vulnérabilités dans Google Android (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0472/,avis,CVE-2025-26453
+CERTFR-2025-AVI-0472,Multiples vulnérabilités dans Google Android (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0472/,avis,CVE-2025-21486
+CERTFR-2025-AVI-0472,Multiples vulnérabilités dans Google Android (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0472/,avis,CVE-2025-26455
+CERTFR-2025-AVI-0472,Multiples vulnérabilités dans Google Android (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0472/,avis,CVE-2024-53019
+CERTFR-2025-AVI-0472,Multiples vulnérabilités dans Google Android (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0472/,avis,CVE-2024-53010
+CERTFR-2025-AVI-0472,Multiples vulnérabilités dans Google Android (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0472/,avis,CVE-2025-32312
+CERTFR-2025-AVI-0472,Multiples vulnérabilités dans Google Android (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0472/,avis,CVE-2025-26456
+CERTFR-2025-AVI-0472,Multiples vulnérabilités dans Google Android (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0472/,avis,CVE-2025-0835
+CERTFR-2025-AVI-0472,Multiples vulnérabilités dans Google Android (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0472/,avis,CVE-2025-26441
+CERTFR-2025-AVI-0472,Multiples vulnérabilités dans Google Android (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0472/,avis,CVE-2024-53021
+CERTFR-2025-AVI-0472,Multiples vulnérabilités dans Google Android (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0472/,avis,CVE-2025-26462
+CERTFR-2025-AVI-0472,Multiples vulnérabilités dans Google Android (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0472/,avis,CVE-2025-26445
+CERTFR-2025-AVI-0472,Multiples vulnérabilités dans Google Android (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0472/,avis,CVE-2025-26458
+CERTFR-2025-AVI-0472,Multiples vulnérabilités dans Google Android (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0472/,avis,CVE-2025-0468
+CERTFR-2025-AVI-0473,Multiples vulnérabilités dans les produits Splunk (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0473/,avis,CVE-2024-24790
+CERTFR-2025-AVI-0473,Multiples vulnérabilités dans les produits Splunk (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0473/,avis,CVE-2024-53259
+CERTFR-2025-AVI-0473,Multiples vulnérabilités dans les produits Splunk (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0473/,avis,CVE-2025-20298
+CERTFR-2025-AVI-0473,Multiples vulnérabilités dans les produits Splunk (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0473/,avis,CVE-2024-24791
+CERTFR-2025-AVI-0473,Multiples vulnérabilités dans les produits Splunk (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0473/,avis,CVE-2024-35255
+CERTFR-2025-AVI-0473,Multiples vulnérabilités dans les produits Splunk (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0473/,avis,CVE-2024-34158
+CERTFR-2025-AVI-0473,Multiples vulnérabilités dans les produits Splunk (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0473/,avis,CVE-2024-28180
+CERTFR-2025-AVI-0473,Multiples vulnérabilités dans les produits Splunk (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0473/,avis,CVE-2024-45338
+CERTFR-2025-AVI-0473,Multiples vulnérabilités dans les produits Splunk (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0473/,avis,CVE-2024-45337
+CERTFR-2025-AVI-0473,Multiples vulnérabilités dans les produits Splunk (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0473/,avis,CVE-2025-22869
+CERTFR-2025-AVI-0473,Multiples vulnérabilités dans les produits Splunk (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0473/,avis,CVE-2022-31159
+CERTFR-2025-AVI-0473,Multiples vulnérabilités dans les produits Splunk (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0473/,avis,CVE-2025-20297
+CERTFR-2025-AVI-0473,Multiples vulnérabilités dans les produits Splunk (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0473/,avis,CVE-2024-3651
+CERTFR-2025-AVI-0473,Multiples vulnérabilités dans les produits Splunk (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0473/,avis,CVE-2024-34155
+CERTFR-2025-AVI-0473,Multiples vulnérabilités dans les produits Splunk (03 juin 2025),"Tue, 03 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0473/,avis,CVE-2024-24789
+CERTFR-2025-AVI-0474,Multiples vulnérabilités dans Microsoft Edge (04 juin 2025),"Wed, 04 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0474/,avis,CVE-2025-5419
+CERTFR-2025-AVI-0474,Multiples vulnérabilités dans Microsoft Edge (04 juin 2025),"Wed, 04 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0474/,avis,CVE-2025-5068
+CERTFR-2025-AVI-0475,Multiples vulnérabilités dans Python (04 juin 2025),"Wed, 04 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0475/,avis,CVE-2025-4330
+CERTFR-2025-AVI-0475,Multiples vulnérabilités dans Python (04 juin 2025),"Wed, 04 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0475/,avis,CVE-2025-4138
+CERTFR-2025-AVI-0475,Multiples vulnérabilités dans Python (04 juin 2025),"Wed, 04 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0475/,avis,CVE-2025-4517
+CERTFR-2025-AVI-0475,Multiples vulnérabilités dans Python (04 juin 2025),"Wed, 04 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0475/,avis,CVE-2025-4435
+CERTFR-2025-AVI-0475,Multiples vulnérabilités dans Python (04 juin 2025),"Wed, 04 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0475/,avis,CVE-2024-12718
+CERTFR-2025-AVI-0476,Vulnérabilité dans cURL  (04 juin 2025),"Wed, 04 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0476/,avis,CVE-2025-5399
+CERTFR-2025-AVI-0477,Multiples vulnérabilités dans les produits VMware (05 juin 2025),"Thu, 05 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0477/,avis,CVE-2025-22245
+CERTFR-2025-AVI-0477,Multiples vulnérabilités dans les produits VMware (05 juin 2025),"Thu, 05 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0477/,avis,CVE-2025-22243
+CERTFR-2025-AVI-0477,Multiples vulnérabilités dans les produits VMware (05 juin 2025),"Thu, 05 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0477/,avis,CVE-2025-22244
+CERTFR-2025-AVI-0478,Vulnérabilité dans Wireshark (05 juin 2025),"Thu, 05 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0478/,avis,CVE-2025-5601
+CERTFR-2025-AVI-0479,Multiples vulnérabilités dans les produits Cisco (05 juin 2025),"Thu, 05 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0479/,avis,CVE-2025-20261
+CERTFR-2025-AVI-0479,Multiples vulnérabilités dans les produits Cisco (05 juin 2025),"Thu, 05 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0479/,avis,CVE-2025-20163
+CERTFR-2025-AVI-0479,Multiples vulnérabilités dans les produits Cisco (05 juin 2025),"Thu, 05 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0479/,avis,CVE-2025-20286
+CERTFR-2025-AVI-0480,Multiples vulnérabilités dans le noyau Linux de Red Hat (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0480/,avis,CVE-2025-37785
+CERTFR-2025-AVI-0480,Multiples vulnérabilités dans le noyau Linux de Red Hat (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0480/,avis,CVE-2025-21919
+CERTFR-2025-AVI-0480,Multiples vulnérabilités dans le noyau Linux de Red Hat (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0480/,avis,CVE-2025-21964
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2025-32996
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2019-11038
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2021-38593
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2025-1334
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2020-15250
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2023-37920
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2024-0793
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2017-9047
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2024-49766
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2024-56326
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2024-56171
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2024-38819
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2025-27144
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2022-49043
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2024-11831
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2025-30691
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2024-38809
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2025-27152
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2024-47764
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2023-52355
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2025-22868
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2024-56337
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2025-32997
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2024-9902
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2025-21587
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2024-45337
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2024-56332
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2024-56201
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2024-38827
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2023-43804
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2025-25019
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2020-35538
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2025-30698
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2025-26791
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2024-49767
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2024-38828
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2018-5711
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2023-1916
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2025-25022
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2025-25020
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2025-22869
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2024-43800
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2022-1354
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2025-25021
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2024-52304
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2023-24607
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2025-22235
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2025-27789
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2024-57556
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2025-27363
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2025-24928
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2024-50379
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2023-24056
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2024-38816
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2024-52317
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2024-52316
+CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis,CVE-2022-3570
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-21980
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2024-53042
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2024-58088
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22107
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2024-27018
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22033
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-39728
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22017
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2024-58094
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22025
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22036
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-21852
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22027
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-21853
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-21931
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2023-53034
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-23138
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-23129
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2024-57882
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22106
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22093
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22050
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-21768
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-23131
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-21904
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-37798
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-37860
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22004
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22121
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22116
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2024-50162
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22105
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-21833
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22055
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2024-58070
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22090
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-21792
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2024-58093
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22080
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-21867
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2024-58095
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-21758
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-23136
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-37785
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2024-35840
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-21999
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-21808
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2024-50115
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22044
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22062
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22058
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22018
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-21925
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-21812
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-23145
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-21683
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22045
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-37799
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2024-58068
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2024-57998
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22029
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22104
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22060
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2024-28956
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-21707
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-21985
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22109
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22075
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22065
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22097
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2024-57924
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22020
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2024-50083
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2024-58096
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2024-56641
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2024-46763
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2024-50163
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-21926
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22102
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2024-56702
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22016
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-21696
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2024-58097
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2024-58001
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-21963
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2024-53156
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22108
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-23133
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22128
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2024-46865
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-21854
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22086
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2024-27415
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22064
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22015
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-21962
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22053
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22088
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-22115
+CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis,CVE-2025-21964
+CERTFR-2025-AVI-0483,Vulnérabilité dans Mozilla VPN (10 juin 2025),"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0483/,avis,CVE-2025-5687
+CERTFR-2025-AVI-0484,Vulnérabilité dans les produits HPE Aruba Networking (10 juin 2025),"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0484/,avis,CVE-2025-37100
+CERTFR-2025-AVI-0485,Multiples vulnérabilités dans les produits Schneider Electric (10 juin 2025),"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0485/,avis,CVE-2025-3116
+CERTFR-2025-AVI-0485,Multiples vulnérabilités dans les produits Schneider Electric (10 juin 2025),"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0485/,avis,CVE-2025-3117
+CERTFR-2025-AVI-0485,Multiples vulnérabilités dans les produits Schneider Electric (10 juin 2025),"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0485/,avis,CVE-2025-3899
+CERTFR-2025-AVI-0485,Multiples vulnérabilités dans les produits Schneider Electric (10 juin 2025),"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0485/,avis,CVE-2025-3898
+CERTFR-2025-AVI-0485,Multiples vulnérabilités dans les produits Schneider Electric (10 juin 2025),"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0485/,avis,CVE-2025-3112
+CERTFR-2025-AVI-0485,Multiples vulnérabilités dans les produits Schneider Electric (10 juin 2025),"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0485/,avis,CVE-2025-3905
+CERTFR-2025-AVI-0486,Multiples vulnérabilités dans les produits Qnap (10 juin 2025),"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0486/,avis,CVE-2025-26465
+CERTFR-2025-AVI-0486,Multiples vulnérabilités dans les produits Qnap (10 juin 2025),"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0486/,avis,CVE-2025-33031
+CERTFR-2025-AVI-0486,Multiples vulnérabilités dans les produits Qnap (10 juin 2025),"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0486/,avis,CVE-2024-56805
+CERTFR-2025-AVI-0486,Multiples vulnérabilités dans les produits Qnap (10 juin 2025),"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0486/,avis,CVE-2024-50406
+CERTFR-2025-AVI-0486,Multiples vulnérabilités dans les produits Qnap (10 juin 2025),"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0486/,avis,CVE-2025-22482
+CERTFR-2025-AVI-0486,Multiples vulnérabilités dans les produits Qnap (10 juin 2025),"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0486/,avis,CVE-2025-26466
+CERTFR-2025-AVI-0486,Multiples vulnérabilités dans les produits Qnap (10 juin 2025),"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0486/,avis,CVE-2025-29872
+CERTFR-2025-AVI-0486,Multiples vulnérabilités dans les produits Qnap (10 juin 2025),"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0486/,avis,CVE-2025-29892
+CERTFR-2025-AVI-0486,Multiples vulnérabilités dans les produits Qnap (10 juin 2025),"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0486/,avis,CVE-2025-22490
+CERTFR-2025-AVI-0486,Multiples vulnérabilités dans les produits Qnap (10 juin 2025),"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0486/,avis,CVE-2025-29873
+CERTFR-2025-AVI-0486,Multiples vulnérabilités dans les produits Qnap (10 juin 2025),"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0486/,avis,CVE-2025-29884
+CERTFR-2025-AVI-0486,Multiples vulnérabilités dans les produits Qnap (10 juin 2025),"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0486/,avis,CVE-2025-33035
+CERTFR-2025-AVI-0486,Multiples vulnérabilités dans les produits Qnap (10 juin 2025),"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0486/,avis,CVE-2025-29876
+CERTFR-2025-AVI-0486,Multiples vulnérabilités dans les produits Qnap (10 juin 2025),"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0486/,avis,CVE-2025-22485
+CERTFR-2025-AVI-0486,Multiples vulnérabilités dans les produits Qnap (10 juin 2025),"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0486/,avis,CVE-2024-13087
+CERTFR-2025-AVI-0486,Multiples vulnérabilités dans les produits Qnap (10 juin 2025),"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0486/,avis,CVE-2025-22484
+CERTFR-2025-AVI-0486,Multiples vulnérabilités dans les produits Qnap (10 juin 2025),"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0486/,avis,CVE-2023-28370
+CERTFR-2025-AVI-0486,Multiples vulnérabilités dans les produits Qnap (10 juin 2025),"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0486/,avis,CVE-2025-29877
+CERTFR-2025-AVI-0486,Multiples vulnérabilités dans les produits Qnap (10 juin 2025),"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0486/,avis,CVE-2025-29883
+CERTFR-2025-AVI-0486,Multiples vulnérabilités dans les produits Qnap (10 juin 2025),"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0486/,avis,CVE-2025-30279
+CERTFR-2025-AVI-0486,Multiples vulnérabilités dans les produits Qnap (10 juin 2025),"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0486/,avis,CVE-2025-22486
+CERTFR-2025-AVI-0486,Multiples vulnérabilités dans les produits Qnap (10 juin 2025),"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0486/,avis,CVE-2025-29871
+CERTFR-2025-AVI-0486,Multiples vulnérabilités dans les produits Qnap (10 juin 2025),"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0486/,avis,CVE-2024-6387
+CERTFR-2025-AVI-0486,Multiples vulnérabilités dans les produits Qnap (10 juin 2025),"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0486/,avis,CVE-2025-22481
+CERTFR-2025-AVI-0486,Multiples vulnérabilités dans les produits Qnap (10 juin 2025),"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0486/,avis,CVE-2024-13088
+CERTFR-2025-AVI-0486,Multiples vulnérabilités dans les produits Qnap (10 juin 2025),"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0486/,avis,CVE-2025-29885
+CERTFR-2025-AVI-0494,Vulnérabilité dans Elastic Kibana (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0494/,avis,CVE-2024-43706
+CERTFR-2025-AVI-0495,Multiples vulnérabilités dans les produits Adobe (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0495/,avis,CVE-2025-43577
+CERTFR-2025-AVI-0495,Multiples vulnérabilités dans les produits Adobe (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0495/,avis,CVE-2025-43573
+CERTFR-2025-AVI-0495,Multiples vulnérabilités dans les produits Adobe (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0495/,avis,CVE-2025-43585
+CERTFR-2025-AVI-0495,Multiples vulnérabilités dans les produits Adobe (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0495/,avis,CVE-2025-43578
+CERTFR-2025-AVI-0495,Multiples vulnérabilités dans les produits Adobe (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0495/,avis,CVE-2025-43586
+CERTFR-2025-AVI-0495,Multiples vulnérabilités dans les produits Adobe (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0495/,avis,CVE-2025-27206
+CERTFR-2025-AVI-0495,Multiples vulnérabilités dans les produits Adobe (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0495/,avis,CVE-2025-43550
+CERTFR-2025-AVI-0495,Multiples vulnérabilités dans les produits Adobe (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0495/,avis,CVE-2025-27207
+CERTFR-2025-AVI-0495,Multiples vulnérabilités dans les produits Adobe (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0495/,avis,CVE-2025-43574
+CERTFR-2025-AVI-0495,Multiples vulnérabilités dans les produits Adobe (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0495/,avis,CVE-2025-43575
+CERTFR-2025-AVI-0495,Multiples vulnérabilités dans les produits Adobe (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0495/,avis,CVE-2025-47111
+CERTFR-2025-AVI-0495,Multiples vulnérabilités dans les produits Adobe (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0495/,avis,CVE-2025-43576
+CERTFR-2025-AVI-0495,Multiples vulnérabilités dans les produits Adobe (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0495/,avis,CVE-2025-43579
+CERTFR-2025-AVI-0495,Multiples vulnérabilités dans les produits Adobe (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0495/,avis,CVE-2025-47110
+CERTFR-2025-AVI-0495,Multiples vulnérabilités dans les produits Adobe (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0495/,avis,CVE-2025-47112
+CERTFR-2025-AVI-0496,Multiples vulnérabilités dans les produits Fortinet (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0496/,avis,CVE-2024-32119
+CERTFR-2025-AVI-0496,Multiples vulnérabilités dans les produits Fortinet (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0496/,avis,CVE-2023-48786
+CERTFR-2025-AVI-0496,Multiples vulnérabilités dans les produits Fortinet (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0496/,avis,CVE-2024-50562
+CERTFR-2025-AVI-0496,Multiples vulnérabilités dans les produits Fortinet (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0496/,avis,CVE-2025-22256
+CERTFR-2025-AVI-0496,Multiples vulnérabilités dans les produits Fortinet (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0496/,avis,CVE-2023-29184
+CERTFR-2025-AVI-0496,Multiples vulnérabilités dans les produits Fortinet (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0496/,avis,CVE-2024-54019
+CERTFR-2025-AVI-0496,Multiples vulnérabilités dans les produits Fortinet (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0496/,avis,CVE-2025-24471
+CERTFR-2025-AVI-0496,Multiples vulnérabilités dans les produits Fortinet (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0496/,avis,CVE-2025-31104
+CERTFR-2025-AVI-0496,Multiples vulnérabilités dans les produits Fortinet (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0496/,avis,CVE-2024-45329
+CERTFR-2025-AVI-0496,Multiples vulnérabilités dans les produits Fortinet (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0496/,avis,CVE-2024-50568
+CERTFR-2025-AVI-0496,Multiples vulnérabilités dans les produits Fortinet (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0496/,avis,CVE-2025-25250
+CERTFR-2025-AVI-0496,Multiples vulnérabilités dans les produits Fortinet (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0496/,avis,CVE-2025-22251
+CERTFR-2025-AVI-0496,Multiples vulnérabilités dans les produits Fortinet (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0496/,avis,CVE-2025-22254
+CERTFR-2025-AVI-0496,Multiples vulnérabilités dans les produits Fortinet (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0496/,avis,CVE-2025-22862
+CERTFR-2025-AVI-0497,Vulnérabilité dans les processeurs Intel (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0497/,avis,CVE-2025-2884
+CERTFR-2025-AVI-0493,Multiples vulnérabilités dans les produits Centreon (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0493/,avis,CVE-2022-46337
+CERTFR-2025-AVI-0493,Multiples vulnérabilités dans les produits Centreon (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0493/,avis,CVE-2024-55573
+CERTFR-2025-AVI-0493,Multiples vulnérabilités dans les produits Centreon (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0493/,avis,CVE-2023-28447
+CERTFR-2025-AVI-0487,Multiples vulnérabilités dans les produits SAP (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0487/,avis,CVE-2025-42987
+CERTFR-2025-AVI-0487,Multiples vulnérabilités dans les produits SAP (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0487/,avis,CVE-2025-42991
+CERTFR-2025-AVI-0487,Multiples vulnérabilités dans les produits SAP (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0487/,avis,CVE-2025-42996
+CERTFR-2025-AVI-0487,Multiples vulnérabilités dans les produits SAP (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0487/,avis,CVE-2025-42988
+CERTFR-2025-AVI-0487,Multiples vulnérabilités dans les produits SAP (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0487/,avis,CVE-2025-42995
+CERTFR-2025-AVI-0487,Multiples vulnérabilités dans les produits SAP (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0487/,avis,CVE-2025-42984
+CERTFR-2025-AVI-0487,Multiples vulnérabilités dans les produits SAP (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0487/,avis,CVE-2025-42982
+CERTFR-2025-AVI-0487,Multiples vulnérabilités dans les produits SAP (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0487/,avis,CVE-2025-42993
+CERTFR-2025-AVI-0487,Multiples vulnérabilités dans les produits SAP (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0487/,avis,CVE-2025-42977
+CERTFR-2025-AVI-0487,Multiples vulnérabilités dans les produits SAP (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0487/,avis,CVE-2025-31325
+CERTFR-2025-AVI-0487,Multiples vulnérabilités dans les produits SAP (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0487/,avis,CVE-2025-42983
+CERTFR-2025-AVI-0487,Multiples vulnérabilités dans les produits SAP (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0487/,avis,CVE-2025-42998
+CERTFR-2025-AVI-0487,Multiples vulnérabilités dans les produits SAP (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0487/,avis,CVE-2025-42989
+CERTFR-2025-AVI-0487,Multiples vulnérabilités dans les produits SAP (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0487/,avis,CVE-2025-42994
+CERTFR-2025-AVI-0487,Multiples vulnérabilités dans les produits SAP (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0487/,avis,CVE-2025-23192
+CERTFR-2025-AVI-0487,Multiples vulnérabilités dans les produits SAP (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0487/,avis,CVE-2025-42990
+CERTFR-2025-AVI-0491,Multiples vulnérabilités dans les produits Mozilla (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0491/,avis,CVE-2025-49710
+CERTFR-2025-AVI-0491,Multiples vulnérabilités dans les produits Mozilla (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0491/,avis,CVE-2025-5986
+CERTFR-2025-AVI-0491,Multiples vulnérabilités dans les produits Mozilla (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0491/,avis,CVE-2025-49709
+CERTFR-2025-AVI-0490,Multiples vulnérabilités dans Ivanti Workspace Control (IWC) (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0490/,avis,CVE-2025-22455
+CERTFR-2025-AVI-0490,Multiples vulnérabilités dans Ivanti Workspace Control (IWC) (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0490/,avis,CVE-2025-22463
+CERTFR-2025-AVI-0490,Multiples vulnérabilités dans Ivanti Workspace Control (IWC) (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0490/,avis,CVE-2025-5353
+CERTFR-2025-AVI-0489,Multiples vulnérabilités dans Google Chrome (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0489/,avis,CVE-2025-5959
+CERTFR-2025-AVI-0489,Multiples vulnérabilités dans Google Chrome (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0489/,avis,CVE-2025-5958
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2024-37370
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2024-41797
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2025-26465
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2025-31115
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2023-46218
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2023-28531
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2023-6780
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2023-51385
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2023-38546
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2024-33602
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2025-40568
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2025-21796
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2023-52927
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2025-21864
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2024-45492
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2024-24855
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2025-40569
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2024-58005
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2025-21712
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2025-4373
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2025-4598
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2023-44487
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2023-6779
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2023-5363
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2024-33600
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2025-21728
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2025-21767
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2024-33599
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2024-57996
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2023-46219
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2025-21766
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2024-45490
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2023-48795
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2024-45491
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2025-21745
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2025-21795
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2025-21758
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2024-26596
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2023-4527
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2025-21848
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2024-53166
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2025-46836
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2025-21862
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2025-40567
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2024-33601
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2024-28085
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2024-57977
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2024-6119
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2025-21765
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2023-4806
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2025-21702
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2025-21865
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2025-21724
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2025-21701
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2024-12243
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2023-4911
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2024-6387
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2023-51384
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2021-41617
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2024-50246
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2024-34397
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2023-6246
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2024-2961
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2024-12133
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2025-21756
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2024-37371
+CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis,CVE-2023-38545
+CERTFR-2025-AVI-0488,Vulnérabilité dans Stormshield Network Security (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0488/,avis,CVE-2024-44078
+CERTFR-2025-AVI-0498,Multiples vulnérabilités dans Microsoft Office (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0498/,avis,CVE-2025-32717
+CERTFR-2025-AVI-0498,Multiples vulnérabilités dans Microsoft Office (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0498/,avis,CVE-2025-47169
+CERTFR-2025-AVI-0498,Multiples vulnérabilités dans Microsoft Office (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0498/,avis,CVE-2025-47162
+CERTFR-2025-AVI-0498,Multiples vulnérabilités dans Microsoft Office (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0498/,avis,CVE-2025-47175
+CERTFR-2025-AVI-0498,Multiples vulnérabilités dans Microsoft Office (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0498/,avis,CVE-2025-47171
+CERTFR-2025-AVI-0498,Multiples vulnérabilités dans Microsoft Office (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0498/,avis,CVE-2025-47165
+CERTFR-2025-AVI-0498,Multiples vulnérabilités dans Microsoft Office (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0498/,avis,CVE-2025-47164
+CERTFR-2025-AVI-0498,Multiples vulnérabilités dans Microsoft Office (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0498/,avis,CVE-2025-47174
+CERTFR-2025-AVI-0498,Multiples vulnérabilités dans Microsoft Office (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0498/,avis,CVE-2025-47167
+CERTFR-2025-AVI-0498,Multiples vulnérabilités dans Microsoft Office (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0498/,avis,CVE-2025-47168
+CERTFR-2025-AVI-0498,Multiples vulnérabilités dans Microsoft Office (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0498/,avis,CVE-2025-47176
+CERTFR-2025-AVI-0498,Multiples vulnérabilités dans Microsoft Office (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0498/,avis,CVE-2025-47170
+CERTFR-2025-AVI-0498,Multiples vulnérabilités dans Microsoft Office (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0498/,avis,CVE-2025-47173
+CERTFR-2025-AVI-0498,Multiples vulnérabilités dans Microsoft Office (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0498/,avis,CVE-2025-47957
+CERTFR-2025-AVI-0498,Multiples vulnérabilités dans Microsoft Office (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0498/,avis,CVE-2025-47953
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-33073
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-24068
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-33071
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-33061
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-32720
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-32713
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-33067
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-47160
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-33068
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-33055
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-33065
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-32712
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-47956
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-32715
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-33069
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-47955
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-33053
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-33070
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-32721
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-33062
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-32722
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-33052
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-32725
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-32710
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-47962
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-24065
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-33075
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-33059
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-33064
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-29828
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-32724
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-33056
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-33057
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-33063
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-47969
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-32718
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-32714
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-32719
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-33058
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-33060
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-33050
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-33066
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-32716
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-3052
+CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis,CVE-2025-24069
+CERTFR-2025-AVI-0500,Vulnérabilité dans Microsoft .Net (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0500/,avis,CVE-2025-30399
+CERTFR-2025-AVI-0501,Multiples vulnérabilités dans les produits Microsoft (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0501/,avis,CVE-2025-47959
+CERTFR-2025-AVI-0501,Multiples vulnérabilités dans les produits Microsoft (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0501/,avis,CVE-2025-47968
+CERTFR-2025-AVI-0501,Multiples vulnérabilités dans les produits Microsoft (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0501/,avis,CVE-2025-47169
+CERTFR-2025-AVI-0501,Multiples vulnérabilités dans les produits Microsoft (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0501/,avis,CVE-2025-47163
+CERTFR-2025-AVI-0501,Multiples vulnérabilités dans les produits Microsoft (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0501/,avis,CVE-2025-30399
+CERTFR-2025-AVI-0501,Multiples vulnérabilités dans les produits Microsoft (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0501/,avis,CVE-2025-47172
+CERTFR-2025-AVI-0501,Multiples vulnérabilités dans les produits Microsoft (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0501/,avis,CVE-2025-47168
+CERTFR-2025-AVI-0501,Multiples vulnérabilités dans les produits Microsoft (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0501/,avis,CVE-2025-47977
+CERTFR-2025-AVI-0501,Multiples vulnérabilités dans les produits Microsoft (11 juin 2025),"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0501/,avis,CVE-2025-47166
+CERTFR-2025-AVI-0502,Multiples vulnérabilités dans GitLab (12 juin 2025),"Thu, 12 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0502/,avis,CVE-2025-4278
+CERTFR-2025-AVI-0502,Multiples vulnérabilités dans GitLab (12 juin 2025),"Thu, 12 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0502/,avis,CVE-2025-0673
+CERTFR-2025-AVI-0502,Multiples vulnérabilités dans GitLab (12 juin 2025),"Thu, 12 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0502/,avis,CVE-2025-2254
+CERTFR-2025-AVI-0502,Multiples vulnérabilités dans GitLab (12 juin 2025),"Thu, 12 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0502/,avis,CVE-2025-1516
+CERTFR-2025-AVI-0502,Multiples vulnérabilités dans GitLab (12 juin 2025),"Thu, 12 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0502/,avis,CVE-2025-1478
+CERTFR-2025-AVI-0502,Multiples vulnérabilités dans GitLab (12 juin 2025),"Thu, 12 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0502/,avis,CVE-2025-5982
+CERTFR-2025-AVI-0502,Multiples vulnérabilités dans GitLab (12 juin 2025),"Thu, 12 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0502/,avis,CVE-2024-9512
+CERTFR-2025-AVI-0502,Multiples vulnérabilités dans GitLab (12 juin 2025),"Thu, 12 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0502/,avis,CVE-2025-5996
+CERTFR-2025-AVI-0502,Multiples vulnérabilités dans GitLab (12 juin 2025),"Thu, 12 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0502/,avis,CVE-2025-5121
+CERTFR-2025-AVI-0502,Multiples vulnérabilités dans GitLab (12 juin 2025),"Thu, 12 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0502/,avis,CVE-2025-5195
+CERTFR-2025-AVI-0503,Multiples vulnérabilités dans les produits Mitel (12 juin 2025),"Thu, 12 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0503/,avis,CVE-2025-23092
+CERTFR-2025-AVI-0504,Vulnérabilité dans les produits Moxa (12 juin 2025),"Thu, 12 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0504/,avis,CVE-2024-9404
+CERTFR-2025-AVI-0505,Multiples vulnérabilités dans les produits Palo Alto Networks (12 juin 2025),"Thu, 12 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0505/,avis,CVE-2025-5280
+CERTFR-2025-AVI-0505,Multiples vulnérabilités dans les produits Palo Alto Networks (12 juin 2025),"Thu, 12 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0505/,avis,CVE-2025-5281
+CERTFR-2025-AVI-0505,Multiples vulnérabilités dans les produits Palo Alto Networks (12 juin 2025),"Thu, 12 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0505/,avis,CVE-2025-4229
+CERTFR-2025-AVI-0505,Multiples vulnérabilités dans les produits Palo Alto Networks (12 juin 2025),"Thu, 12 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0505/,avis,CVE-2025-5065
+CERTFR-2025-AVI-0505,Multiples vulnérabilités dans les produits Palo Alto Networks (12 juin 2025),"Thu, 12 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0505/,avis,CVE-2025-4233
+CERTFR-2025-AVI-0505,Multiples vulnérabilités dans les produits Palo Alto Networks (12 juin 2025),"Thu, 12 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0505/,avis,CVE-2025-4664
+CERTFR-2025-AVI-0505,Multiples vulnérabilités dans les produits Palo Alto Networks (12 juin 2025),"Thu, 12 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0505/,avis,CVE-2025-5066
+CERTFR-2025-AVI-0505,Multiples vulnérabilités dans les produits Palo Alto Networks (12 juin 2025),"Thu, 12 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0505/,avis,CVE-2025-4230
+CERTFR-2025-AVI-0505,Multiples vulnérabilités dans les produits Palo Alto Networks (12 juin 2025),"Thu, 12 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0505/,avis,CVE-2025-5064
+CERTFR-2025-AVI-0505,Multiples vulnérabilités dans les produits Palo Alto Networks (12 juin 2025),"Thu, 12 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0505/,avis,CVE-2025-4231
+CERTFR-2025-AVI-0505,Multiples vulnérabilités dans les produits Palo Alto Networks (12 juin 2025),"Thu, 12 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0505/,avis,CVE-2025-4228
+CERTFR-2025-AVI-0505,Multiples vulnérabilités dans les produits Palo Alto Networks (12 juin 2025),"Thu, 12 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0505/,avis,CVE-2025-5419
+CERTFR-2025-AVI-0505,Multiples vulnérabilités dans les produits Palo Alto Networks (12 juin 2025),"Thu, 12 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0505/,avis,CVE-2025-4227
+CERTFR-2025-AVI-0505,Multiples vulnérabilités dans les produits Palo Alto Networks (12 juin 2025),"Thu, 12 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0505/,avis,CVE-2025-4232
+CERTFR-2025-AVI-0505,Multiples vulnérabilités dans les produits Palo Alto Networks (12 juin 2025),"Thu, 12 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0505/,avis,CVE-2025-5068
+CERTFR-2025-AVI-0505,Multiples vulnérabilités dans les produits Palo Alto Networks (12 juin 2025),"Thu, 12 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0505/,avis,CVE-2025-5067
+CERTFR-2025-AVI-0505,Multiples vulnérabilités dans les produits Palo Alto Networks (12 juin 2025),"Thu, 12 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0505/,avis,CVE-2025-5283
+CERTFR-2025-AVI-0505,Multiples vulnérabilités dans les produits Palo Alto Networks (12 juin 2025),"Thu, 12 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0505/,avis,CVE-2025-5063
