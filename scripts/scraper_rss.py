@@ -35,7 +35,6 @@ for rss_type, url in RSS_FEEDS.items():
             "type": rss_type
         })
 
-# Sauvegarde dans le CSV
 df_rss = pd.DataFrame(rss_data)
 df_rss.to_csv("data/raw_rss.csv", index=False)
-print(f"✅ {len(df_rss)} lignes enregistrées dans data/raw_rss.csv")
+print(f"{len(df_rss)} lignes enregistrées dans data/raw_rss.csv")
