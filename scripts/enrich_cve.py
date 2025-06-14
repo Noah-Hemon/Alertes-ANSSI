@@ -105,4 +105,4 @@ df_final = df.merge(df_enrich, on="cve_id", how="left")
 df_final.to_csv("../data/cve_enriched.csv", index=False)
 
 print("Enrichissement MITRE + EPSS terminé.")
-print(f"{len(df_final)} CVE enrichies et enregistrées dans data/cve_enriched_full.csv")
+print(f"{len(df_final)} CVE enrichies et enregistrées dans data/cve_enriched.csv")
