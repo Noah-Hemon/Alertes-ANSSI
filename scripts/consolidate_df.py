@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv("../data/cve_enriched.csv")
+df = pd.read_csv("data/cve_enriched.csv")
 df.columns = ["Identifiant ANSSI", "Titre", "Publiée le", "Lien", "Type (Avis ou Alerte)", "ID CVE", "Description", "Score CVSS", "Criticité", "ID CWE", "Description CWE", "Vendeur", "Version Affectés", "Score EPSS"]
 
 def clean_vendor(vendor_str):

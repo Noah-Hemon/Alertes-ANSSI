@@ -7,7 +7,7 @@ pd.set_option('display.width', 1000)
 pd.set_option('display.max_columns', None)
 
 # Lecture et renommage des colonnes
-df = pd.read_csv("../data/cve_enriched.csv")
+df = pd.read_csv("data/cve_enriched.csv")
 df.columns = ["Identifiant ANSSI", "Titre", "Publiée le", "Lien", "Type (Avis ou Alerte)", "ID CVE", "Description", "Score CVSS", "Criticité", "ID CWE", "Description CWE", "Vendeur", "Version Affectés", "Score EPSS"]
 
 # Fonctions de nettoyage pour les colonnes sous forme de string
