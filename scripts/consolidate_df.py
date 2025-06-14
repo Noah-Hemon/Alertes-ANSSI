@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Lecture du CSV enrichi
-df = pd.read_csv("../data/cve_enriched.csv")
+df = pd.read_csv("data/cve_enriched.csv")
 
 # On renomme les colonnes pour correspondre aux informations attendues
 df.columns = [

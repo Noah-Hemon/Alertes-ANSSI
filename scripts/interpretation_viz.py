@@ -7,7 +7,8 @@ pd.set_option('display.width', 1000)
 pd.set_option('display.max_columns', None)
 
 # Lecture et renommage des colonnes
-df = pd.read_csv("../data/cve_enriched.csv")
+
+df = pd.read_csv("data/cve_enriched.csv")
 df.columns = [
     "Identifiant ANSSI",    # ID du bulletin (ANSSI)
     "Titre",               # Titre du bulletin (ANSSI)
@@ -24,6 +25,7 @@ df.columns = [
     "Version Affectés",    # Versions affectées
     "Score EPSS"           # Score EPSS
 ]
+
 
 # Fonctions de nettoyage pour les colonnes sous forme de string
 def clean_vendor(vendor_str):
