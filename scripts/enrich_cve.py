@@ -2,7 +2,7 @@ import pandas as pd
 import requests
 import time
 
-df = pd.read_csv("../data/cve_extracted.csv")
+df = pd.read_csv("data/cve_extracted.csv")
 df = df[df["cve_id"].notna() & df["cve_id"].str.startswith("CVE-")]
 df_unique = df[["cve_id"]].drop_duplicates().reset_index(drop=True)
 
@@ -102,7 +102,7 @@ for _, row in df_unique.iterrows():
 # Conversion et fusion
 df_enrich = pd.DataFrame(records)
 df_final = df.merge(df_enrich, on="cve_id", how="left")
-df_final.to_csv("../data/cve_enriched.csv", index=False)
+df_final.to_csv("data/cve_enriched.csv", index=False)
 
 print("Enrichissement MITRE + EPSS terminé.")
 print(f"{len(df_final)} CVE enrichies et enregistrées dans data/cve_enriched.csv")
