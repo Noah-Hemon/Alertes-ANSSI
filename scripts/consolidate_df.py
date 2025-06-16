@@ -91,3 +91,5 @@ for col, replacement in replacement_dict.items():
 
 # Affichage du DataFrame consolidé
 print(df.head())
+
+print(df["ID CWE"].to_string())
