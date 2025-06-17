@@ -20,7 +20,7 @@ df.columns = [
     "Version Affectés",    # Versions affectées
     "Score EPSS"           # Score EPSS
 ]
-print(df.isna().sum())
+
 # Fonctions de nettoyage pour consolider les chaînes de caractères en gardant des valeurs uniques
 def clean_vendor(vendor_str):
     if isinstance(vendor_str, str):
@@ -43,7 +43,7 @@ df["Version Affectés"] = df["Version Affectés"].apply(clean_versions)
 # Ajout d'une colonne "Produit" avec la valeur par défaut "Non disponible"
 df["Produit"] = "Non disponible"
 
-# Réorganisation des colonnes suivant l'ordre demandé :
+# Réorganisation des colonnes suivant l'ordre demandé
 df = df[[
     "Identifiant ANSSI",
     "Titre",
@@ -62,10 +62,10 @@ df = df[[
     "Version Affectés"
 ]]  
 
+print("Avant remplacement NaN, après réorganisation:")
 print(df.isna().sum())
 
-# afficher un message d'erreur lorsque l'on a aucune info
-
+# Remplacement personnalisé des valeurs manquantes
 replacement_dict = {
     "Identifiant ANSSI": "Pas d'Identifiant ANSSI",
     "Titre": "Pas de Titre",
@@ -86,11 +86,33 @@ replacement_dict = {
 
 for col, replacement in replacement_dict.items():
     if df[col].isna().sum() > 0:
-        print(f"Remplacement des valeurs manquantes pour '{col}'")
-    df[col].fillna(replacement, inplace=True)
+        print(f"{col}, OK")
+    # Pour les colonnes numériques, convertir en object avant le remplacement
+    if col in ["Score CVSS", "Score EPSS"]:
+        df[col] = df[col].astype("object")
+    df[col] = df[col].fillna(replacement)
 
-# Affichage du DataFrame consolidé
+# Supprimer les lignes où "Score CVSS" et "Score EPSS" contiennent les messages d'erreur (les deux en meme temps)
+indices_to_drop = []
+for index, row in df.iterrows():
+    if row["Score CVSS"] == "Pas de Score CVSS" and row["Score EPSS"] == "Pas de Score EPSS":
+        indices_to_drop.append(index)
+
+print(f"nombre d'incide dropable{len(indices_to_drop)}")
+df.drop(index=indices_to_drop, inplace=True)
+
+
+
+
+
+
+
+
+# Affichage du DataFrame consolidé et sauvegarde
 print(df)
+df.to_csv("data/cve_cleaned_for_df.csv", index=False)
 
-df.to_csv("data/cve_cleaned_for_df.csv")
-print(df.isna().sum())
+print(f"nombre d'id CWE non dispo : {(df['ID CWE'] == 'Non disponible').sum()}")
+
+
+print(df[df["ID CVE"] == "CVE-2024-24790"].to_string())
