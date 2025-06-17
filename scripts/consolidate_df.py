@@ -52,9 +52,9 @@ df = df[[
     "ID CVE",
     "Score CVSS",
     "Base Severity",
+    "Score EPSS",
     "ID CWE",
     "Description CWE",
-    "Score EPSS",
     "Lien",
     "Description",
     "Vendeur",
@@ -90,6 +90,6 @@ for col, replacement in replacement_dict.items():
     df[col].fillna(replacement, inplace=True)
 
 # Affichage du DataFrame consolidé
-print(df.head())
+print(df)
 
-print(df["ID CWE"].to_string())
+df.to_csv("data/cve_cleaned_for_df.csv")
