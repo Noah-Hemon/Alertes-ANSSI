@@ -35,13 +35,35 @@ for _, row in df_unique.iterrows():
             # Extraction du score CVSS et de la base severity
             try:
                 metrics = container.get("metrics", [])
-                if metrics:
-                    metrics = metrics[0]
+                cvss_score = None
+                base_severity = "Non disponible"
+
+                # First try CNA container
+                for metric in metrics:
                     for key in ["cvssV3_1", "cvssV3_0", "cvssV2"]:
-                        if key in metrics:
-                            metric_data = metrics[key]
+                        if key in metric:
+                            metric_data = metric[key]
                             cvss_score = metric_data.get("baseScore")
                             base_severity = metric_data.get("baseSeverity", "Non disponible")
+                            break
+                    if cvss_score is not None:
+                        break
+
+                # If still not found, try ADP containers
+                if cvss_score is None:
+                    adp_containers = mitre_data.get("containers", {}).get("adp", [])
+                    for adp in adp_containers:
+                        adp_metrics = adp.get("metrics", [])
+                        for metric in adp_metrics:
+                            for key in ["cvssV3_1", "cvssV3_0", "cvssV2"]:
+                                if key in metric:
+                                    metric_data = metric[key]
+                                    cvss_score = metric_data.get("baseScore")
+                                    base_severity = metric_data.get("baseSeverity", "Non disponible")
+                                    break
+                            if cvss_score is not None:
+                                break
+                        if cvss_score is not None:
                             break
             except Exception:
                 pass
