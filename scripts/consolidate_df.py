@@ -20,7 +20,7 @@ df.columns = [
     "Version Affectés",    # Versions affectées
     "Score EPSS"           # Score EPSS
 ]
-
+print(df.isna().sum())
 # Fonctions de nettoyage pour consolider les chaînes de caractères en gardant des valeurs uniques
 def clean_vendor(vendor_str):
     if isinstance(vendor_str, str):
@@ -93,3 +93,4 @@ for col, replacement in replacement_dict.items():
 print(df)
 
 df.to_csv("data/cve_cleaned_for_df.csv")
+print(df.isna().sum())

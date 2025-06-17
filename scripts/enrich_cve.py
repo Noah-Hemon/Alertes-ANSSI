@@ -2,18 +2,46 @@ import pandas as pd
 import requests
 import time
 
+def extract_cvss_score(mitre_data):
+    def extract_from_metrics(metrics):
+        for metric in metrics:
+            for key in ["cvssV3_1", "cvssV3_0", "cvssV2", "cvssV4_0"]:
+                if key in metric:
+                    m = metric[key]
+                    score = m.get("baseScore")
+                    severity = m.get("baseSeverity", "Non disponible")
+                    if score is not None:
+                        return score, severity
+        return None, "Non disponible"
+
+    # 1. Try from CNA
+    cna_metrics = mitre_data.get("containers", {}).get("cna", {}).get("metrics", [])
+    score, severity = extract_from_metrics(cna_metrics)
+    if score is not None:
+        return score, severity
+
+    # 2. Try from ADP
+    for adp in mitre_data.get("containers", {}).get("adp", []):
+        adp_metrics = adp.get("metrics", [])
+        score, severity = extract_from_metrics(adp_metrics)
+        if score is not None:
+            return score, severity
+
+    return None, "Non disponible"
+
+# Chargement des données initiales
 df = pd.read_csv("data/cve_extracted.csv")
 df = df[df["cve_id"].notna() & df["cve_id"].str.startswith("CVE-")]
 df_unique = df[["cve_id"]].drop_duplicates().reset_index(drop=True)
 
 records = []
 
-for _, row in df_unique.iterrows():
+for idx, row in df_unique.iterrows():
     cve_id = row["cve_id"]
     mitre_url = f"https://cveawg.mitre.org/api/cve/{cve_id}"
     epss_url = f"https://api.first.org/data/v1/epss?cve={cve_id}"
 
-    # Initialisation des variables d'extraction
+    # Valeurs par défaut
     cvss_score, base_severity = None, "Non disponible"
     cwe_id, cwe_desc, description = "Non disponible", "Non disponible", "Non disponible"
     vendor = "Non disponible"
@@ -27,71 +55,34 @@ for _, row in df_unique.iterrows():
             mitre_data = mitre_resp.json()
             container = mitre_data.get("containers", {}).get("cna", {})
 
-            # Extraction de la description
+            # Description
             descs = container.get("descriptions", [])
             if descs:
                 description = descs[0].get("value", "Non disponible")
 
-            # Extraction du score CVSS et de la base severity
-            try:
-                metrics = container.get("metrics", [])
-                cvss_score = None
-                base_severity = "Non disponible"
+            # CVSS (tous formats)
+            cvss_score, base_severity = extract_cvss_score(mitre_data)
 
-                # First try CNA container
-                for metric in metrics:
-                    for key in ["cvssV3_1", "cvssV3_0", "cvssV2"]:
-                        if key in metric:
-                            metric_data = metric[key]
-                            cvss_score = metric_data.get("baseScore")
-                            base_severity = metric_data.get("baseSeverity", "Non disponible")
-                            break
-                    if cvss_score is not None:
-                        break
-
-                # If still not found, try ADP containers
-                if cvss_score is None:
-                    adp_containers = mitre_data.get("containers", {}).get("adp", [])
-                    for adp in adp_containers:
-                        adp_metrics = adp.get("metrics", [])
-                        for metric in adp_metrics:
-                            for key in ["cvssV3_1", "cvssV3_0", "cvssV2"]:
-                                if key in metric:
-                                    metric_data = metric[key]
-                                    cvss_score = metric_data.get("baseScore")
-                                    base_severity = metric_data.get("baseSeverity", "Non disponible")
-                                    break
-                            if cvss_score is not None:
-                                break
-                        if cvss_score is not None:
-                            break
-            except Exception:
-                pass
-
-            # Extraction de CWE
+            # CWE
             probtypes = container.get("problemTypes", [])
             if probtypes and "descriptions" in probtypes[0]:
                 desc = probtypes[0]["descriptions"][0]
                 cwe_id = desc.get("cweId", "Non disponible")
                 cwe_desc = desc.get("description", "Non disponible")
 
-            # Extraction du vendor et des versions affectées depuis "affected"
+            # Vendor & versions affectées
             affected = container.get("affected", [])
-            if affected and isinstance(affected, list):
-                # Récupérer tous les vendors listés dans "affected"
+            if affected:
                 vendors_list = [aff.get("vendor", "Non disponible") for aff in affected if aff.get("vendor")]
                 if vendors_list:
                     vendor = ", ".join(vendors_list)
-                # Récupérer les versions affectées
+
                 versions_list = []
                 for aff in affected:
-                    versions = aff.get("versions", [])
-                    for ver in versions:
-                        version = ver.get("version", None)
-                        if version:
-                            versions_list.append(version)
+                    for ver in aff.get("versions", []):
+                        if ver.get("version"):
+                            versions_list.append(ver["version"])
                 if versions_list:
-                    # Optionnel : supprimer les doublons
                     affected_versions = ", ".join(sorted(set(versions_list)))
     except Exception as e:
         print(f"Erreur MITRE pour {cve_id} : {e}")
@@ -118,13 +109,13 @@ for _, row in df_unique.iterrows():
         "epss_score": epss_score
     })
 
-    print(f"OK {_}, next")
+    print(f"OK {idx + 1}/{len(df_unique)}, next")
     time.sleep(0.1)
 
-# Conversion et fusion
+# Fusion et export
 df_enrich = pd.DataFrame(records)
 df_final = df.merge(df_enrich, on="cve_id", how="left")
 df_final.to_csv("data/cve_enriched.csv", index=False)
 
 print("Enrichissement MITRE + EPSS terminé.")
-print(f"{len(df_final)} CVE enrichies et enregistrées dans data/cve_enriched.csv")
+print(f"{len(df_final)} CVE enrichies dans data/cve_enriched.csv")
