@@ -53,6 +53,12 @@ for idx, row in df_unique.iterrows():
         mitre_resp = requests.get(mitre_url, timeout=10)
         if mitre_resp.status_code == 200:
             mitre_data = mitre_resp.json()
+
+            # Vérifier si le CVE est inexistant
+            if mitre_data.get("error") == "CVE_RECORD_DNE":
+                print(f"{cve_id} : Non trouvé (CVE_RECORD_DNE). Ignoré.")
+                continue
+
             container = mitre_data.get("containers", {}).get("cna", {})
 
             # Description
@@ -60,17 +66,40 @@ for idx, row in df_unique.iterrows():
             if descs:
                 description = descs[0].get("value", "Non disponible")
 
-            # CVSS (tous formats)
+            # CVSS
             cvss_score, base_severity = extract_cvss_score(mitre_data)
 
-            # CWE
+            # CWE depuis CNA
+            found_cwe = False
             probtypes = container.get("problemTypes", [])
-            if probtypes and "descriptions" in probtypes[0]:
-                desc = probtypes[0]["descriptions"][0]
-                cwe_id = desc.get("cweId", "Non disponible")
-                cwe_desc = desc.get("description", "Non disponible")
+            for entry in probtypes:
+                for desc in entry.get("descriptions", []):
+                    if desc.get("cweId") and desc.get("cweId") != "n/a":
+                        cwe_id = desc.get("cweId")
+                        cwe_desc = desc.get("description", "Non disponible")
+                        found_cwe = True
+                        break
+                if found_cwe:
+                    break
 
-            # Vendor & versions affectées
+            # Fallback CWE depuis ADP
+            if not found_cwe:
+                adps = mitre_data.get("containers", {}).get("adp", [])
+                for adp in adps:
+                    probtypes = adp.get("problemTypes", [])
+                    for entry in probtypes:
+                        for desc in entry.get("descriptions", []):
+                            if desc.get("cweId"):
+                                cwe_id = desc.get("cweId")
+                                cwe_desc = desc.get("description", "Non disponible")
+                                found_cwe = True
+                                break
+                        if found_cwe:
+                            break
+                    if found_cwe:
+                        break
+
+            # Vendor et versions
             affected = container.get("affected", [])
             if affected:
                 vendors_list = [aff.get("vendor", "Non disponible") for aff in affected if aff.get("vendor")]
@@ -84,8 +113,10 @@ for idx, row in df_unique.iterrows():
                             versions_list.append(ver["version"])
                 if versions_list:
                     affected_versions = ", ".join(sorted(set(versions_list)))
+
     except Exception as e:
         print(f"Erreur MITRE pour {cve_id} : {e}")
+        continue  # Éviter d’ajouter un CVE corrompu même en cas d’erreur
 
     # --- EPSS API ---
     try:
@@ -97,6 +128,7 @@ for idx, row in df_unique.iterrows():
     except Exception as e:
         print(f"Erreur EPSS pour {cve_id} : {e}")
 
+    # Ajout dans le résultat seulement si tout est OK
     records.append({
         "cve_id": cve_id,
         "description": description,
@@ -111,6 +143,7 @@ for idx, row in df_unique.iterrows():
 
     print(f"OK {idx + 1}/{len(df_unique)}, next")
     time.sleep(0.1)
+
 
 # Fusion et export
 df_enrich = pd.DataFrame(records)

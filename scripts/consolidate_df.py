@@ -60,7 +60,7 @@ df = df[[
     "Vendeur",
     "Produit",
     "Version Affectés"
-]]
+]]  
 
 print(df.isna().sum())
 
