@@ -11,23 +11,26 @@ pd.set_option('display.width', 1000)
 pd.set_option('display.max_columns', None)
 
 # Lecture et renommage des colonnes
-df = pd.read_csv("data/cve_enriched.csv")
-df.columns = [
-    "Identifiant ANSSI",    # ID du bulletin (ANSSI)
-    "Titre",               # Titre du bulletin (ANSSI)
-    "Publiée le",          # Date de publication
-    "Lien",                # Lien du bulletin (ANSSI)
-    "Type (Avis ou Alerte)",# Type de bulletin
-    "ID CVE",              # Identifiant CVE
-    "Description",         # Description (issue des API)
-    "Score CVSS",          # Score CVSS
-    "Base Severity",       # Base Severity (Criticité)
-    "ID CWE",              # Type CWE
-    "Description CWE",     # Description CWE
-    "Vendeur",             # Éditeur/Vendor
-    "Version Affectés",    # Versions affectées
-    "Score EPSS"           # Score EPSS
-]
+df = pd.read_csv("data/cve_cleaned_for_df.csv")
+df = df[[
+    "Identifiant ANSSI",
+    "Titre",
+    "Type (Avis ou Alerte)",
+    "Publiée le",
+    "Date de fin d'alerte",
+    "ID CVE",
+    "Score CVSS",
+    "Base Severity",
+    "Score EPSS",
+    "ID CWE",
+    "Description CWE",
+    "Lien",
+    "Description",
+    "Vendeur",
+    "Produit",
+    "Version Affectés",
+    "Différence en jours"
+]]  
 
 # Fonctions de nettoyage pour les colonnes sous forme de string
 def clean_vendor(vendor_str):
@@ -191,6 +194,24 @@ sns.heatmap(
 plt.title('Heatmap de Corrélation entre les Scores CVSS et EPSS', fontsize=16)
 plt.tight_layout()
 plt.savefig("diagrams/heatmap_cvss_epss_corr.png", dpi=300)
+plt.show()
+
+# ---------------------------
+# 9.1 analyse de la triple corrélation
+
+# S'assurer que la colonne "Différence en jours" est bien en numérique
+df["Différence en jours"] = pd.to_numeric(df["Différence en jours"], errors='coerce')
+
+# Sélectionner les colonnes d'intérêt
+cols = ["Score CVSS", "Score EPSS", "Différence en jours"]
+corr_matrix = df[cols].corr()
+
+# Afficher la heatmap
+plt.figure(figsize=(8,6))
+sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', vmin=-1, vmax=1)
+plt.title("Heatmap de Corrélation entre Différence en jours, Score CVSS et Score EPSS", fontsize=16)
+plt.tight_layout()
+plt.savefig("diagrams/heatmap_corr_diff_jours_cvss_epss.png", dpi=300)
 plt.show()
 
 # ---------------------------
