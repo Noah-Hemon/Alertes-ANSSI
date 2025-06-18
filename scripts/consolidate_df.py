@@ -129,7 +129,7 @@ df["Date de fin d'alerte"] = end_dates.apply(localize_utc)
 # Calculer la différence en jours : maintenant les deux colonnes sont tz-aware (UTC)
 df["Différence en jours"] = (df["Date de fin d'alerte"] - df["Publiée le"]).dt.days
 
-df.loc[df["Date de fin d'alerte"].isna(), "Date de fin d'alerte"] = "Inconnu"
+df.loc[df["Date de fin d'alerte"].isna(), "Date de fin d'alerte"] = "En cours"
 df.loc[df["Différence en jours"].isna(), "Différence en jours"] = "Non disponible"
 
 # print(df[["Publiée le", "Date de fin d'alerte", "Différence en jours"]].to_string())
@@ -144,3 +144,6 @@ for col, value in first_row.items():
 
 
 df.to_csv("data/cve_cleaned_for_df.csv", index=False)
+
+
+print(df[["Publiée le", "Date de fin d'alerte", "Différence en jours"]].to_string())

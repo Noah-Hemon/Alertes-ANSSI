@@ -178,7 +178,8 @@ df_final.to_csv("data/cve_enriched.csv", index=False)
 def get_closed_at(id_anssi):
     """
     Appelle l'API CERT pour récupérer les informations de l'alerte et
-    renvoie le dernier revision_date (date de clôture) ou None si non trouvé.
+    renvoie la valeur de l'attribut "closed_at" (date de clôture) convertie en datetime,
+    ou None si non trouvé.
     """
     if id_anssi == "Non disponible" or pd.isna(id_anssi):
         return None
@@ -188,11 +189,9 @@ def get_closed_at(id_anssi):
         response = requests.get(url, timeout=10)
         if response.status_code == 200:
             data = response.json()
-            revisions = data.get("revisions", [])
-            if revisions:
-                dates = [pd.to_datetime(item.get("revision_date")) for item in revisions if item.get("revision_date")]
-                if dates:
-                    return max(dates)
+            closed_date = data.get("closed_at")
+            if closed_date:
+                return pd.to_datetime(closed_date)
         return None
     except Exception as e:
         print(f"Erreur lors de l'appel pour {id_anssi}: {e}")
