@@ -3,6 +3,9 @@ import pandas as pd
 # Lecture du CSV enrichi
 df = pd.read_csv("data/cve_enriched.csv")
 
+if "Identifiant ANSSI" in df.columns:
+    df = df.drop(columns=["Identifiant ANSSI"])
+
 # On renomme les colonnes pour correspondre aux informations attendues
 df.columns = [
     "Identifiant ANSSI",    # ID du bulletin (ANSSI)
@@ -18,7 +21,8 @@ df.columns = [
     "Description CWE",     # Description CWE
     "Vendeur",             # Éditeur/Vendor
     "Version Affectés",    # Versions affectées
-    "Score EPSS"           # Score EPSS
+    "Score EPSS",          # Score EPSS
+    "Date de fin d'alerte" # Date fin alerte
 ]
 
 # Fonctions de nettoyage pour consolider les chaînes de caractères en gardant des valeurs uniques
@@ -49,6 +53,7 @@ df = df[[
     "Titre",
     "Type (Avis ou Alerte)",
     "Publiée le",
+    "Date de fin d'alerte",
     "ID CVE",
     "Score CVSS",
     "Base Severity",
@@ -81,7 +86,8 @@ replacement_dict = {
     "Description": "Pas de Description",
     "Vendeur": "Pas de Vendeur",
     "Produit": "Pas de Produit",
-    "Version Affectés": "Pas de Version Affectés"
+    "Version Affectés": "Pas de Version Affectés",
+    "Date de fin d'alerte": "Inconnue"
 }
 
 for col, replacement in replacement_dict.items():
@@ -101,18 +107,40 @@ for index, row in df.iterrows():
 print(f"nombre d'incide dropable{len(indices_to_drop)}")
 df.drop(index=indices_to_drop, inplace=True)
 
-
-
-
-
-
-
-
-# Affichage du DataFrame consolidé et sauvegarde
-print(df)
-df.to_csv("data/cve_cleaned_for_df.csv", index=False)
-
 print(f"nombre d'id CWE non dispo : {(df['ID CWE'] == 'Non disponible').sum()}")
 
 
 print(df[df["ID CVE"] == "CVE-2024-24790"].to_string())
+
+# Convertir "Publiée le" directement en datetime tz-aware (UTC)
+df["Publiée le"] = pd.to_datetime(df["Publiée le"], errors="coerce", utc=True)
+
+# Convertir "Date de fin d'alerte" en datetime
+end_dates = pd.to_datetime(df["Date de fin d'alerte"], errors="coerce")
+
+# Pour s'assurer que "Date de fin d'alerte" soit tz-aware, on localise en UTC si tz-naïve
+def localize_utc(dt):
+    if pd.notnull(dt) and dt.tzinfo is None:
+        return dt.tz_localize("UTC")
+    return dt
+
+df["Date de fin d'alerte"] = end_dates.apply(localize_utc)
+
+# Calculer la différence en jours : maintenant les deux colonnes sont tz-aware (UTC)
+df["Différence en jours"] = (df["Date de fin d'alerte"] - df["Publiée le"]).dt.days
+
+df.loc[df["Date de fin d'alerte"].isna(), "Date de fin d'alerte"] = "Inconnu"
+df.loc[df["Différence en jours"].isna(), "Différence en jours"] = "Non disponible"
+
+# print(df[["Publiée le", "Date de fin d'alerte", "Différence en jours"]].to_string())
+
+
+first_row = df.iloc[0]
+for col, value in first_row.items():
+    print(f"{col}: {value}")
+
+
+
+
+
+df.to_csv("data/cve_cleaned_for_df.csv", index=False)

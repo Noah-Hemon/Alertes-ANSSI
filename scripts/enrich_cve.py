@@ -171,13 +171,17 @@ for idx, row in df_unique.iterrows():
 
 df_enrich = pd.DataFrame(records)
 
+# Fusion et export
+df_final = df.merge(df_enrich, on="cve_id", how="left")
+df_final.to_csv("data/cve_enriched.csv", index=False)
+
 def get_closed_at(id_anssi):
     """
     Appelle l'API CERT pour récupérer les informations de l'alerte et
-    renvoie le dernier revision_date (date de clôture).
+    renvoie le dernier revision_date (date de clôture) ou None si non trouvé.
     """
     if id_anssi == "Non disponible" or pd.isna(id_anssi):
-        return None  # Si l'identifiant est invalide, retourner None
+        return None
 
     url = f"https://www.cert.ssi.gouv.fr/alerte/{id_anssi}/json/"
     try:
@@ -186,50 +190,34 @@ def get_closed_at(id_anssi):
             data = response.json()
             revisions = data.get("revisions", [])
             if revisions:
-                # Transformation des dates en datetime et récupération du maximum
                 dates = [pd.to_datetime(item.get("revision_date")) for item in revisions if item.get("revision_date")]
                 if dates:
-                    return max(dates)  # Retourner la date la plus récente
+                    return max(dates)
         return None
     except Exception as e:
         print(f"Erreur lors de l'appel pour {id_anssi}: {e}")
         return None
 
+# Lecture de l'intégralité du CSV
+df = pd.read_csv("data/cve_enriched.csv")
+
 closed_dates = []
 
-# Fusion et export
-df_final = df.merge(df_enrich, on="cve_id", how="left")
-df_final.to_csv("data/cve_enriched.csv", index=False)
-
-# Chargement des données enrichies
-df_enrich = pd.read_csv("data/cve_enriched.csv")
-
-# Vérifier si la colonne "Identifiant ANSSI" existe
-if "Identifiant ANSSI" not in df_enrich.columns:
-    print("La colonne 'Identifiant ANSSI' est absente du DataFrame.")
-    df_enrich["Identifiant ANSSI"] = "Non disponible"
-
-# Initialisation de la liste pour stocker les dates de clôture
-closed_dates = []
-
-# Pour chaque alerte dans le DataFrame enrichi, appeler l'API et récupérer la date de clôture
-for idx, row in df_enrich.iterrows():
+# Pour chaque alerte, appeler l'API et récupérer la date de clôture
+for idx, row in df.iterrows():
     id_anssi = str(row["id_anssi"])
+    finalerte = get_closed_at(id_anssi)
+    if finalerte is None:
+        finalerte = "Inconnu"
+    closed_dates.append(finalerte)
+    print(f"{id_anssi} -> finalerte: {finalerte}")
+    time.sleep(0.1)
 
-    print(id_anssi)
+# Ajout de la nouvelle colonne "finalerte" au DataFrame original
+df["finalerte"] = closed_dates
 
-    closed_date = get_closed_at(id_anssi)
-    closed_dates.append(closed_date)
-    print(f"{id_anssi} -> closed_at: {closed_date}")
-    time.sleep(0.1)  # Pause pour éviter de surcharger l'API
-
-# Ajout de la nouvelle colonne "closed_at"
-df_enrich["closed_at"] = closed_dates
-
-# Sauvegarde du DataFrame mis à jour
-df_enrich.to_csv("data/cve_enriched_with_closedat.csv", index=False)
-
-print("Mise à jour terminée, fichier data/cve_enriched_with_closedat.csv créé.")
+# Sauvegarde du DataFrame enrichi avec la nouvelle colonne
+df.to_csv("data/cve_enriched.csv", index=False)
 
 print("Enrichissement MITRE + EPSS terminé.")
 print(f"{len(df_final)} CVE enrichies dans data/cve_enriched.csv")
