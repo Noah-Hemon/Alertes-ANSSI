@@ -42,14 +42,10 @@ warnings.filterwarnings('ignore')
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import LabelEncoder
-
-
-
 def main():
 
-
     # Charger les données enrichies
-    df = pd.read_csv('data/cve_cleaned_for_df.csv')
+    df = pd.read_csv('../data/cve_cleaned_for_df.csv')
 
     # Afficher les colonnes et un aperçu
     print("Colonnes du CSV :", list(df.columns))
@@ -100,7 +96,7 @@ def main():
     pd.set_option('display.max_columns', None)
 
     # Lecture et renommage des colonnes
-    df = pd.read_csv("data/cve_cleaned_for_df.csv")
+    df = pd.read_csv("../data/cve_cleaned_for_df.csv")
     df = df[[
         "Identifiant ANSSI",
         "Titre",
@@ -1205,16 +1201,21 @@ def main():
 
     # %%
     def send_email(to_email, subject, body):
-        from_email = "fill it"
-        password = "fill it"
+        # À personnaliser avec vos identifiants réels
+        from_email = "aitndf@gmail.com"
+        password = "qyja rsra yqfe kflh"
+
+
         if from_email == "votre_email@gmail.com" or password == "votre_mot_de_passe_application":
             print("\n[SIMULATION EMAIL] (configuration non renseignée)")
             print(f"TO: {to_email}\nSUBJECT: {subject}\nBODY:\n{body}\n{'-'*40}")
             return False
+
         msg = MIMEText(body, 'html')
         msg['From'] = from_email
         msg['To'] = to_email
         msg['Subject'] = subject
+
         try:
             server = smtplib.SMTP('smtp.gmail.com', 587)
             server.starttls()
@@ -1227,33 +1228,50 @@ def main():
             print(f"Erreur lors de l'envoi de l'email: {e}")
             return False
 
-    subscribers = ["fill it"]
+    # Liste des abonnés (à adapter selon vos besoins)
+    subscribers = ["essai@gmail.com"]
 
-    # --- Préparation des infos modèles ---
-    # 1. Supervised: y_pred_dates et pred_results
-    pred_dates_dict = {}
-    duration_dict = {}
-    if 'y_pred_dates' in locals():
-        for idx, date in y_pred_dates.items():
-            pred_dates_dict[idx] = date
-    if 'pred_results' in locals():
-        for i, row in pred_results.iterrows():
-            duration_dict[row['Identifiant_ANSSI']] = row['Duree_predite_jours'] if 'Duree_predite_jours' in row else row.get('Duree_jours', None)
+    # CORRECTION : Vérifier que df_crit existe avant de l'utiliser
+    if 'df_crit' not in locals():
+        print("⚠️ La variable df_crit n'est pas définie. Exécution de la détection des vulnérabilités critiques...")
 
-    # 2. Unsupervised: df_work_indexed, cluster_summaries
-    cluster_info_dict = {}
-    if 'df_work_indexed' in locals() and 'cluster_summaries' in locals():
-        for i, row in df_work_indexed.iterrows():
-            cluster = row.get('cluster', None)
-            if cluster is not None:
-                summary = next((s for s in cluster_summaries if s['cluster'] == cluster+1), None)
-                if summary:
-                    cluster_info_dict[row['ID CVE']] = summary
+        # Recréer la détection des vulnérabilités critiques
+        critical_cvss = 9.0
+        critical_severity = 'CRITICAL'
+        now = pd.Timestamp.now()
 
+        # Vérifier que df existe
+        if 'df' not in locals():
+            print("❌ Le DataFrame principal 'df' n'est pas chargé. Veuillez exécuter les cellules précédentes.")
+            df_crit = pd.DataFrame()  # DataFrame vide pour éviter l'erreur
+        else:
+            # Standardiser les timezones pour éviter les conflits
+            df['Publiée le'] = pd.to_datetime(df['Publiée le']).dt.tz_localize(None)
+            df["Date de fin d'alerte"] = pd.to_datetime(df["Date de fin d'alerte"]).dt.tz_localize(None)
+
+            # Utiliser les vrais noms de colonnes
+            df['base_severity_upper'] = df['Base Severity'].str.upper()
+            df['days_to_end'] = (df["Date de fin d'alerte"] - now).dt.days
+
+            # Critères de criticité
+            crit_mask = (
+                (pd.notna(df['Score CVSS']) & (df['Score CVSS'] >= critical_cvss)) |
+                (df['base_severity_upper'] == critical_severity)
+            ) & (
+                (pd.isna(df["Date de fin d'alerte"])) |  # Date manquante = critique
+                (df['days_to_end'] <= 7)  # Date proche ou dépassée
+            )
+
+            df_crit = df[crit_mask].copy()
+            print(f"✅ {len(df_crit)} vulnérabilités critiques détectées")
+
+    # Envoi d'emails pour les vulnérabilités critiques
     if 'df_crit' in locals() and not df_crit.empty:
         print(f"\n📧 ENVOI D'ALERTES EMAIL POUR {len(df_crit)} VULNÉRABILITÉS CRITIQUES")
         print("=" * 70)
+
         for idx, row in df_crit.iterrows():
+            # CORRECTION : Utiliser les vrais noms de colonnes avec gestion d'erreur
             cve_id = row.get('ID CVE', 'N/A')
             title = row.get('Titre', 'N/A')
             cvss_score = row.get('Score CVSS', 'N/A')
@@ -1261,46 +1279,15 @@ def main():
             vendor = row.get('Vendeur', 'N/A')
             date_fin = row.get("Date de fin d'alerte", None)
             link = row.get('Lien', 'N/A')
-            id_anssi = row.get('Identifiant ANSSI', None)
 
-            # --- Infos du modèle supervisé ---
-            # Date de fin prédite si absente
-            date_fin_pred = None
-            if pd.isna(date_fin) and idx in pred_dates_dict:
-                date_fin_pred = pred_dates_dict[idx]
-            elif pd.isna(date_fin) and id_anssi in pred_dates_dict:
-                date_fin_pred = pred_dates_dict[id_anssi]
-            # Durée prédite
-            duree_predite = duration_dict.get(id_anssi, None)
-
-            # --- Infos du modèle non supervisé ---
-            cluster_html = ""
-            if 'df_work_indexed' in locals() and cve_id in df_work_indexed['ID CVE'].values:
-                cluster_row = df_work_indexed[df_work_indexed['ID CVE'] == cve_id]
-                if not cluster_row.empty:
-                    cluster_num = int(cluster_row['cluster'].values[0]) + 1
-                    cluster_html += f"<li><b>Cluster thématique :</b> Groupe {cluster_num}</li>"
-                    # Ajoute le profil du cluster si dispo
-                    summary = cluster_info_dict.get(cve_id, None)
-                    if summary:
-                        cluster_html += f"<li><b>Profil du groupe :</b> {summary['top_vendor']} / {summary['top_cwe']}</li>"
-                        cluster_html += f"<li><b>Score de criticité du groupe :</b> {summary['criticality_score']:.0f}/100</li>"
-                        if summary['criticality_score'] >= 70:
-                            cluster_html += "<li><b>Recommandation :</b> 🔴 Action immédiate requise</li>"
-                        elif summary['criticality_score'] >= 50:
-                            cluster_html += "<li><b>Recommandation :</b> 🟡 Traitement sous 48h</li>"
-                        elif summary['criticality_score'] >= 30:
-                            cluster_html += "<li><b>Recommandation :</b> 🟢 Traitement sous 1 semaine</li>"
-                        else:
-                            cluster_html += "<li><b>Recommandation :</b> ⚪ Surveillance passive</li>"
-
-            # Sujet court
+            # Titre court pour le sujet de l'email
             title_short = str(title)[:40] + "..." if len(str(title)) > 40 else str(title)
             subject = f"🚨 ALERTE CRITIQUE CVE: {cve_id} - {title_short}"
 
             # Formatage de la date de fin
             date_fin_str = "NON DÉFINIE"
             urgency_level = "🔴 CRITIQUE"
+
             if pd.notna(date_fin):
                 date_fin_str = date_fin.strftime('%Y-%m-%d')
                 days_remaining = (date_fin - pd.Timestamp.now()).days
@@ -1313,23 +1300,14 @@ def main():
                 elif days_remaining <= 7:
                     date_fin_str += f" (Dans {days_remaining} jours)"
                     urgency_level = "🟡 URGENT"
-            elif date_fin_pred is not None:
-                if isinstance(date_fin_pred, pd.Timestamp):
-                    date_fin_str = f"{date_fin_pred.strftime('%Y-%m-%d')} (prédite)"
-                else:
-                    date_fin_str = f"{date_fin_pred} (prédite)"
+            else:
                 urgency_level = "⚠️ PRIORITÉ ÉLEVÉE"
 
-            # Ajout de la durée prédite si dispo
-            duree_html = ""
-            if duree_predite is not None:
-                duree_html = f"<li><b>Durée prédite de la menace :</b> {duree_predite} jours</li>"
-
-            # Construction du mail enrichi
             body = f"""
             <html>
             <body style="font-family: Arial, sans-serif;">
                 <h2 style="color: #d32f2f;">🚨 Vulnérabilité Critique Détectée</h2>
+
                 <div style="background-color: #ffebee; padding: 15px; border-left: 5px solid #d32f2f; margin: 10px 0;">
                     <h3>🎯 Niveau d'urgence : {urgency_level}</h3>
                     <h3>Détails de la vulnérabilité :</h3>
@@ -1340,11 +1318,10 @@ def main():
                         <li><b>Sévérité:</b> <span style="color: #d32f2f; font-weight: bold;">{severity}</span></li>
                         <li><b>Produit/Vendeur:</b> {vendor}</li>
                         <li><b>Date de fin de menace:</b> <strong>{date_fin_str}</strong></li>
-                        {duree_html}
-                        {cluster_html}
                         <li><b>Lien ANSSI:</b> <a href="{link}" target="_blank" style="color: #1976d2;">{link}</a></li>
                     </ul>
                 </div>
+
                 <div style="background-color: #fff3e0; padding: 15px; border-left: 5px solid #ff9800; margin: 10px 0;">
                     <h3>⚡ Actions recommandées IMMÉDIATEMENT :</h3>
                     <ul>
@@ -1355,6 +1332,7 @@ def main():
                         <li>📊 <strong>Documenter les actions</strong> prises pour audit</li>
                     </ul>
                 </div>
+
                 <div style="background-color: #e8f5e8; padding: 15px; border-left: 5px solid #4caf50; margin: 10px 0;">
                     <h3>📞 Contact d'urgence :</h3>
                     <p>Pour toute question urgente concernant cette vulnérabilité, contactez l'équipe sécurité :</p>
@@ -1363,6 +1341,7 @@ def main():
                         <li>📱 Téléphone d'urgence : +33 1 XX XX XX XX</li>
                     </ul>
                 </div>
+
                 <hr style="border: 1px solid #ddd; margin: 20px 0;">
                 <p style="color: #666; font-style: italic; font-size: 12px;">
                     ⚙️ Cet email a été généré automatiquement par le système de surveillance des vulnérabilités ANSSI.
@@ -1372,20 +1351,24 @@ def main():
             </body>
             </html>
             """
+
+            # Envoi à tous les abonnés
             for email in subscribers:
                 send_email(email, subject, body)
+
             print(f"📧 Alerte envoyée pour {cve_id} ({urgency_level})")
 
+        # Résumé final
         print(f"\n✅ RÉSUMÉ DES ENVOIS :")
         print(f"   • {len(df_crit)} vulnérabilités critiques traitées")
         print(f"   • {len(df_crit) * len(subscribers)} emails envoyés au total")
         print(f"   • Destinataires : {', '.join(subscribers)}")
+
     elif 'df_crit' in locals() and df_crit.empty:
         print("✅ Aucune vulnérabilité critique détectée - Aucun email à envoyer.")
     else:
         print("❌ Impossible d'envoyer les alertes email : données non disponibles.")
         print("💡 Suggestion : Exécutez d'abord les cellules précédentes pour charger et analyser les données.")
-
 
 
 if __name__ == "__main__":

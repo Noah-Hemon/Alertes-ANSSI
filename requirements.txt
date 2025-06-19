@@ -5,3 +5,4 @@ scikit-learn
 requests
 feedparser
 seaborn
+schedule
