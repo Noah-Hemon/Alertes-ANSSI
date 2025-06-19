@@ -2,14 +2,14 @@
 # # Notebook ML : Prédiction de la Date de Fin de Menace, Clustering Thématique et Alertes Email
 # 
 # Ce notebook intègre :
-# - Un modèle supervisé pour l’imputation des valeurs manquantes, en particulier la date de fin de menace (`finalerte`).
+# - Un modèle supervisé pour l'imputation des valeurs manquantes, en particulier la date de fin de menace (`finalerte`).
 # - Un modèle non supervisé pour le regroupement thématique des vulnérabilités.
-# - Un système d’alerte email pour notifier les vulnérabilités critiques détectées.
+# - Un système d'alerte email pour notifier les vulnérabilités critiques détectées.
 
 # %% [markdown]
 # ## 1. Importation des Librairies
 # 
-# On importe les librairies nécessaires pour la manipulation des données, le machine learning, la visualisation et l’envoi d’emails.
+# On importe les librairies nécessaires pour la manipulation des données, le machine learning, la visualisation et l'envoi d'emails.
 
 # %%
 import pandas as pd
@@ -45,7 +45,7 @@ from sklearn.preprocessing import LabelEncoder
 def main():
 
     # Charger les données enrichies
-    df = pd.read_csv('../data/cve_cleaned_for_df.csv')
+    df = pd.read_csv('data/cve_cleaned_for_df.csv')
 
     # Afficher les colonnes et un aperçu
     print("Colonnes du CSV :", list(df.columns))
@@ -89,6 +89,7 @@ def main():
 
     # %%
     # Créer le dossier si nécessaire
+    import os
     os.makedirs("diagrams", exist_ok=True)
 
     # Configuration de l'affichage
@@ -96,7 +97,7 @@ def main():
     pd.set_option('display.max_columns', None)
 
     # Lecture et renommage des colonnes
-    df = pd.read_csv("../data/cve_cleaned_for_df.csv")
+    df = pd.read_csv("data/cve_cleaned_for_df.csv")
     df = df[[
         "Identifiant ANSSI",
         "Titre",
@@ -142,160 +143,7 @@ def main():
     # Conversion de la date de publication en datetime
     df["Publiée le"] = pd.to_datetime(df["Publiée le"], errors="coerce")
 
-    # ---------------------------
-    # 1. Histogramme des Scores CVSS
-    plt.figure(figsize=(14, 7))
-    sns.histplot(df['Score CVSS'], bins=20, kde=True, color='skyblue')
-    plt.axvline(x=4.0, color='gold', linestyle='--', label='Moyen (4.0)')
-    plt.axvline(x=7.0, color='orange', linestyle='--', label='Élevé (7.0)')
-    plt.axvline(x=9.0, color='red', linestyle='--', label='Critique (9.0)')
-    plt.title('Distribution des Scores de Gravité CVSS', fontsize=16)
-    plt.xlabel('Score CVSS')
-    plt.ylabel('Nombre de Vulnérabilités')
-    plt.legend()
-    plt.tight_layout()
-    plt.savefig("diagrams/histogram_cvss.png", dpi=300)
-    plt.show()
-
-    # ---------------------------
-    # 2. Diagramme circulaire (Donut) pour le Top 10 des CWE
-    top_cwe = df['ID CWE'].value_counts().nlargest(10)
-    plt.figure(figsize=(12, 12))
-    plt.pie(top_cwe, labels=top_cwe.index, autopct='%1.1f%%', startangle=140, pctdistance=0.85)
-    centre_circle = plt.Circle((0,0),0.70,fc='white')
-    fig = plt.gcf()
-    fig.gca().add_artist(centre_circle)
-    plt.title('Top 10 des Types de Vulnérabilités (CWE) les Plus Fréquents', fontsize=16)
-    plt.axis('equal')
-    plt.tight_layout()
-    plt.savefig("diagrams/donut_top_cwe.png", dpi=300)
-    plt.show()
-
-    # ---------------------------
-    # 3. Diagramme à barres pour le Top 15 des éditeurs (Vendeur)
-    plt.figure(figsize=(12, 8))
-    top_vendors = df['Vendeur'].value_counts().nlargest(15)
-    sns.barplot(x=top_vendors.values, y=top_vendors.index, palette='viridis')
-    plt.title('Top 15 des Éditeurs les Plus Affectés par des Vulnérabilités', fontsize=16)
-    plt.xlabel('Nombre Total de Vulnérabilités')
-    plt.ylabel('Éditeur')
-    plt.tight_layout()
-    plt.savefig("diagrams/bar_top_vendors.png", dpi=300)
-    plt.show()
-
-    # ---------------------------
-    # 4. Scatter plot : Score CVSS vs Score EPSS
-
-    # Palette dynamique pour toutes les valeurs de sévérité présentes
-    unique_sev = df['Base Severity'].unique()
-    default_palette = {
-        'Non disponible': 'grey',
-        'LOW': 'green',
-        'MEDIUM': 'orange',
-        'HIGH': 'red',
-        'CRITICAL': 'darkred',
-        'NONE': 'grey',
-        'None': 'grey',
-        'none': 'grey'
-    }
-    palette = {sev: default_palette.get(sev, 'grey') for sev in unique_sev}
-
-    plt.figure(figsize=(14, 8))
-    sns.scatterplot(
-        data=df,
-        x='Score CVSS',
-        y='Score EPSS',
-        hue='Base Severity',
-        palette=palette,
-        alpha=0.7,
-        s=80
-    )
-    plt.title('Relation entre Gravité (CVSS) et Probabilité d\'Exploitation (EPSS)', fontsize=16)
-    plt.xlabel('Score CVSS (Gravité)')
-    plt.ylabel('Score EPSS (Probabilité d\'exploitation)')
-    plt.legend(title='Sévérité')
-    plt.tight_layout()
-    plt.savefig("diagrams/scatter_cvss_epss.png", dpi=300)
-    plt.show()
-
-    # ---------------------------
-    # 5. Courbe cumulative des Vulnérabilités au fil du Temps
-    df_sorted_by_date = df.sort_values(by='Publiée le')
-    cumulative_vulns = df_sorted_by_date.groupby('Publiée le').size().cumsum()
-    plt.figure(figsize=(14, 7))
-    cumulative_vulns.plot(kind='line', color='navy')
-    plt.title('Évolution Cumulative des Vulnérabilités Détectées', fontsize=16)
-    plt.xlabel('Date de Publication')
-    plt.ylabel('Nombre Cumulatif de Vulnérabilités')
-    plt.tight_layout()
-    plt.savefig("diagrams/cumulative_vulns.png", dpi=300)
-    plt.show()
-
-    # ---------------------------
-    # 6. Boxplot des Scores CVSS pour les 10 Éditeurs les Plus Affectés
-    top_10_vendors_names = df['Vendeur'].value_counts().nlargest(10).index
-    df_top_vendors = df[df['Vendeur'].isin(top_10_vendors_names)]
-    plt.figure(figsize=(15, 8))
-    sns.boxplot(
-        data=df_top_vendors,
-        x='Score CVSS',
-        y='Vendeur',
-        order=top_10_vendors_names,
-        palette='coolwarm'
-    )
-    plt.title('Dispersion des Scores CVSS pour les 10 Éditeurs les Plus Affectés', fontsize=16)
-    plt.xlabel('Score CVSS')
-    plt.ylabel('Éditeur')
-    plt.tight_layout()
-    plt.savefig("diagrams/boxplot_top_vendors_cvss.png", dpi=300)
-    plt.show()
-
-    # ---------------------------
-    # 7. Countplot du nombre de Bulletins par Éditeur et par Type (Avis vs. Alerte)
-    top_10_vendors_names = df['Vendeur'].value_counts().nlargest(10).index
-    df_top_vendors_types = df[df['Vendeur'].isin(top_10_vendors_names)]
-    plt.figure(figsize=(14, 8))
-    sns.countplot(
-        data=df_top_vendors_types,
-        y='Vendeur',
-        hue='Type (Avis ou Alerte)',
-        order=top_10_vendors_names,
-        palette={'avis': 'steelblue', 'alerte': 'orangered'}
-    )
-    plt.title('Nombre de Bulletins par Éditeur et par Type (Avis vs. Alerte)', fontsize=16)
-    plt.xlabel('Nombre de Bulletins')
-    plt.ylabel('Éditeur')
-    plt.legend(title='Type de Bulletin')
-    plt.tight_layout()
-    plt.savefig("diagrams/countplot_vendors_bulletins.png", dpi=300)
-    plt.show()
-
-    # ---------------------------
-    # 8. Histogramme des Scores EPSS
-    plt.figure(figsize=(14, 7))
-    sns.histplot(df['Score EPSS'].dropna(), kde=True, color='mediumseagreen', bins=30)
-    plt.title("Distribution de la Probabilité d'Exploitation (Score EPSS)", fontsize=16)
-    plt.xlabel("Score EPSS")
-    plt.ylabel("Nombre de Vulnérabilités")
-    plt.tight_layout()
-    plt.savefig("diagrams/histogram_epss.png", dpi=300)
-    plt.show()
-
-    # ---------------------------
-    # 9. Heatmap de Corrélation entre Score CVSS et Score EPSS
-    correlation_matrix = df[['Score CVSS', 'Score EPSS']].corr()
-    plt.figure(figsize=(8, 6))
-    sns.heatmap(
-        correlation_matrix,
-        annot=True,
-        cmap='coolwarm',
-        vmin=-1, vmax=1
-    )
-    plt.title('Heatmap de Corrélation entre les Scores CVSS et EPSS', fontsize=16)
-    plt.tight_layout()
-    plt.savefig("diagrams/heatmap_cvss_epss_corr.png", dpi=300)
-    plt.show()
-
+    
     # ---------------------------
     # 9.1 analyse de la triple corrélation
 
@@ -306,60 +154,9 @@ def main():
     cols = ["Score CVSS", "Score EPSS", "Différence en jours"]
     corr_matrix = df[cols].corr()
 
-    # Afficher la heatmap
-    plt.figure(figsize=(8,6))
-    sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', vmin=-1, vmax=1)
-    plt.title("Heatmap de Corrélation entre Différence en jours, Score CVSS et Score EPSS", fontsize=16)
-    plt.tight_layout()
-    plt.savefig("diagrams/heatmap_corr_diff_jours_cvss_epss.png", dpi=300)
-    plt.show()
 
-    # ---------------------------
-    # 10. Barplot des Top Éditeurs Affectés (pour analyse CWE)
-    top_vendors_for_cwe = df['Vendeur'].value_counts().nlargest(10)
-    plt.figure(figsize=(12, 8))
-    sns.barplot(x=top_vendors_for_cwe.values, y=top_vendors_for_cwe.index, palette='magma')
-    plt.title("Top Éditeurs Affectés par les Vulnérabilités", fontsize=16)
-    plt.xlabel("Nombre de Vulnérabilités de ce Type")
-    plt.ylabel("Éditeur")
-    plt.tight_layout()
-    plt.savefig("diagrams/bar_top_vendors_for_cwe.png", dpi=300)
-    plt.show()
 
-    # ---------------------------
-    # 11. Barplot des Top 20 Versions les Plus Fréquemment Affectées
-    top_versions = df['Version Affectés'].value_counts().nlargest(20)
-    plt.figure(figsize=(12, 10))
-    sns.barplot(x=top_versions.values, y=top_versions.index, palette='plasma')
-    plt.title('Top 20 des Versions de Produits les Plus Fréquemment Affectées', fontsize=16)
-    plt.xlabel('Nombre de Bulletins de Vulnérabilité Associés')
-    plt.ylabel('Version du Produit')
-    plt.tight_layout()
-    plt.savefig("diagrams/bar_top_product_versions.png", dpi=300)
-    plt.show()
 
-    # ---------------------------
-    # 12. Stacked Bar (Horizontal) : Composition de la Sévérité des Vulnérabilités par Éditeur
-    top_vendors_names = df['Vendeur'].value_counts().nlargest(10).index
-    df_top_vendors = df[df['Vendeur'].isin(top_vendors_names)]
-    severity_by_vendor = pd.crosstab(df_top_vendors['Vendeur'], df_top_vendors['Base Severity'])
-    severity_by_vendor.plot(kind='barh', stacked=True, figsize=(14, 8), colormap='coolwarm_r', title='Composition de la Sévérité des Vulnérabilités par Éditeur')
-    plt.tight_layout()
-    plt.savefig("diagrams/stacked_bar_severity_vendor.png", dpi=300)
-    plt.show()
-
-    # ---------------------------
-    # 13. Heatmap des Types de Faiblesses (CWE) par Éditeur
-    top_vendors = df['Vendeur'].value_counts().nlargest(10).index
-    top_cwes = df['ID CWE'].value_counts().nlargest(10).index
-    df_filtered = df[df['Vendeur'].isin(top_vendors) & df['ID CWE'].isin(top_cwes)]
-    cwe_vendor_matrix = pd.crosstab(df_filtered['Vendeur'], df_filtered['ID CWE'])
-    plt.figure(figsize=(15, 10))
-    sns.heatmap(cwe_vendor_matrix, annot=True, cmap='YlGnBu', fmt='d')
-    plt.title('Heatmap des Types de Faiblesses (CWE) par Éditeur', fontsize=16)
-    plt.tight_layout()
-    plt.savefig("diagrams/heatmap_cwe_vendor_matrix.png", dpi=300)
-    plt.show()
 
     # %% [markdown]
     # ## 4. Imputation Supervisée des Valeurs Manquantes (y compris la date de fin de menace)
@@ -635,10 +432,10 @@ def main():
         print("Aucune alerte trouvée dans le dataset.")
 
     # %% [markdown]
-    # ## 5. Application d’un Modèle Non Supervisé pour Regroupement Thématique
+    # ## 5. Application d'un Modèle Non Supervisé pour Regroupement Thématique
     # 
-    # On applique une réduction de dimension (PCA) suivie d’un clustering KMeans pour regrouper les vulnérabilités selon leurs caractéristiques.  
-    # On interprète les clusters pour identifier des thématiques (familles de produits, types d’attaque...).
+    # On applique une réduction de dimension (PCA) suivie d'un clustering KMeans pour regrouper les vulnérabilités selon leurs caractéristiques.  
+    # On interprète les clusters pour identifier des thématiques (familles de produits, types d'attaque...).
 
     # %%
     # Préparation des données pour clustering (sur tout le dataset)
@@ -715,44 +512,7 @@ def main():
         df_work_indexed = df_work.loc[df_cluster.index].copy()
         df_work_indexed['cluster'] = labels
 
-        # **AMÉLIORATION 4 : Visualisation enrichie**
-        plt.figure(figsize=(15, 10))
-
-        # Graphique principal
-        plt.subplot(2, 2, 1)
-        scatter = plt.scatter(X_pca[:, 0], X_pca[:, 1], c=labels, cmap='Set2', s=60, alpha=0.7)
-        plt.colorbar(scatter)
-        plt.title("Clustering des vulnérabilités (PCA)")
-        plt.xlabel("Composante principale 1")
-        plt.ylabel("Composante principale 2")
-
-        # Méthode du coude
-        plt.subplot(2, 2, 2)
-        plt.plot(k_range, inertias, 'bo-')
-        plt.xlabel('Nombre de clusters')
-        plt.ylabel('Inertia')
-        plt.title('Méthode du coude')
-        plt.axvline(x=optimal_k, color='red', linestyle='--', label=f'k optimal = {optimal_k}')
-        plt.legend()
-
-        # Silhouette scores
-        plt.subplot(2, 2, 3)
-        plt.plot(k_range, silhouette_scores, 'ro-')
-        plt.xlabel('Nombre de clusters')
-        plt.ylabel('Silhouette Score')
-        plt.title('Score de Silhouette')
-        plt.axvline(x=optimal_k, color='red', linestyle='--')
-
-        # Distribution des clusters
-        plt.subplot(2, 2, 4)
-        cluster_counts = pd.Series(labels).value_counts().sort_index()
-        plt.bar(cluster_counts.index, cluster_counts.values, color='skyblue')
-        plt.xlabel('Cluster')
-        plt.ylabel('Nombre de vulnérabilités')
-        plt.title('Taille des clusters')
-
-        plt.tight_layout()
-        plt.show()
+ 
 
         # === ANALYSE DÉTAILLÉE DES CLUSTERS POUR LE CLIENT ===
         print("\n" + "="*80)
@@ -937,35 +697,8 @@ def main():
         else:
             print("   ❌ Modèle peu fiable")
 
-        # Visualisation des prédictions vs vraies valeurs
-        plt.figure(figsize=(12, 5))
+       
 
-        # Graphique 1: Scatter plot prédictions vs réalité
-        plt.subplot(1, 2, 1)
-        plt.scatter(y_test_val, y_pred_test, alpha=0.6, color='blue', s=50)
-        plt.xlabel("Durée réelle (jours)")
-        plt.ylabel("Durée prédite (jours)")
-        plt.title("Prédiction vs Réalité (Durée)")
-
-        # Ligne de référence parfaite
-        min_val = min(y_test_val.min(), y_pred_test.min())
-        max_val = max(y_test_val.max(), y_pred_test.max())
-        plt.plot([min_val, max_val], [min_val, max_val], 'r--', alpha=0.8, label='Prédiction parfaite')
-        plt.legend()
-        plt.grid(True, alpha=0.3)
-
-        # Graphique 2: Distribution des erreurs
-        plt.subplot(1, 2, 2)
-        errors = y_test_val - y_pred_test
-        plt.hist(errors, bins=15, alpha=0.7, color='green', edgecolor='black')
-        plt.axvline(x=0, color='red', linestyle='--', alpha=0.8)
-        plt.xlabel("Erreur de prédiction (jours)")
-        plt.ylabel("Fréquence")
-        plt.title("Distribution des erreurs")
-        plt.grid(True, alpha=0.3)
-
-        plt.tight_layout()
-        plt.show()
 
         # Importance des features
         if hasattr(rf_val, 'feature_importances_'):
@@ -1072,7 +805,7 @@ def main():
     # %% [markdown]
     # ## 7. Détection et Génération d'Alertes Critiques
     # 
-    # On filtre les vulnérabilités critiques (score CVSS élevé ou sévérité critique, date de fin proche ou dépassée), on extrait les informations clés, et on prépare le message d’alerte.
+    # On filtre les vulnérabilités critiques (score CVSS élevé ou sévérité critique, date de fin proche ou dépassée), on extrait les informations clés, et on prépare le message d'alerte.
 
     # %%
     # Définition des critères de criticité
@@ -1195,7 +928,7 @@ def main():
         print(f"   • ET (Date de fin dans les 7 prochains jours OU déjà dépassée OU manquante)")
 
     # %% [markdown]
-    # ## 8. Envoi d’Email Automatisé avec Informations Utiles
+    # ## 8. Envoi d'Email Automatisé avec Informations Utiles
     # 
     # On définit une fonction `send_email` et on envoie un email à chaque abonné avec les informations utiles sur la vulnérabilité critique détectée.
 
@@ -1270,9 +1003,25 @@ def main():
         print(f"\n📧 ENVOI D'ALERTES EMAIL POUR {len(df_crit)} VULNÉRABILITÉS CRITIQUES")
         print("=" * 70)
 
+        ALERTS_SENT_FILE = "data/alertes_envoyees.csv"
+
+        # Charger la liste des alertes déjà envoyées
+        if os.path.exists(ALERTS_SENT_FILE) and os.path.getsize(ALERTS_SENT_FILE) > 0:
+            df_old = pd.read_csv(ALERTS_SENT_FILE)
+        else:
+            # Crée un DataFrame vide avec les colonnes attendues
+            df_old = pd.DataFrame(columns=["ID CVE"])
+
+        alertes_envoyees = set(df_old["ID CVE"])
+
+        alertes_a_ajouter = []
+
         for idx, row in df_crit.iterrows():
-            # CORRECTION : Utiliser les vrais noms de colonnes avec gestion d'erreur
             cve_id = row.get('ID CVE', 'N/A')
+            if cve_id in alertes_envoyees:
+                continue  # Déjà envoyée, on saute
+
+            # CORRECTION : Utiliser les vrais noms de colonnes avec gestion d'erreur
             title = row.get('Titre', 'N/A')
             cvss_score = row.get('Score CVSS', 'N/A')
             severity = row.get('Base Severity', 'N/A')
@@ -1357,12 +1106,21 @@ def main():
                 send_email(email, subject, body)
 
             print(f"📧 Alerte envoyée pour {cve_id} ({urgency_level})")
+            alertes_a_ajouter.append(cve_id)
 
         # Résumé final
         print(f"\n✅ RÉSUMÉ DES ENVOIS :")
         print(f"   • {len(df_crit)} vulnérabilités critiques traitées")
         print(f"   • {len(df_crit) * len(subscribers)} emails envoyés au total")
         print(f"   • Destinataires : {', '.join(subscribers)}")
+
+        # Mettre à jour la liste des alertes envoyées
+        if alertes_a_ajouter:
+            df_new = pd.DataFrame({'ID CVE': list(alertes_a_ajouter)})
+            if os.path.exists(ALERTS_SENT_FILE):
+                df_old = pd.read_csv(ALERTS_SENT_FILE)
+                df_new = pd.concat([df_old, df_new]).drop_duplicates()
+            df_new.to_csv(ALERTS_SENT_FILE, index=False)
 
     elif 'df_crit' in locals() and df_crit.empty:
         print("✅ Aucune vulnérabilité critique détectée - Aucun email à envoyer.")
