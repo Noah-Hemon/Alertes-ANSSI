@@ -1,8 +1,8 @@
-import scraper_rss
-import extract_cve
-import enrich_cve
-import consolidate_df
-import model_py
+import scripts.scraper_rss as scraper_rss
+import scripts.extract_cve as extract_cve
+import scripts.enrich_cve as enrich_cve
+import scripts.consolidate_df as consolidate_df
+import scripts.model_py as model_py
 
 print("le scraping commence !")
 scraper_rss.main()
