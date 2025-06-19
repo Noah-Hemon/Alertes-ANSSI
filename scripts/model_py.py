@@ -1006,11 +1006,17 @@ def main():
         ALERTS_SENT_FILE = "data/alertes_envoyees.csv"
 
         # Charger la liste des alertes déjà envoyées
-        if os.path.exists(ALERTS_SENT_FILE) and os.path.getsize(ALERTS_SENT_FILE) > 0:
-            df_old = pd.read_csv(ALERTS_SENT_FILE)
-        else:
-            # Crée un DataFrame vide avec les colonnes attendues
+        import os
+
+        try:
+            if os.path.exists(ALERTS_SENT_FILE) and os.path.getsize(ALERTS_SENT_FILE) > 0:
+                df_old = pd.read_csv(ALERTS_SENT_FILE)
+            else:
+                df_old = pd.DataFrame(columns=["ID CVE"])
+        except pd.errors.EmptyDataError:
             df_old = pd.DataFrame(columns=["ID CVE"])
+
+
 
         alertes_envoyees = set(df_old["ID CVE"])
 
