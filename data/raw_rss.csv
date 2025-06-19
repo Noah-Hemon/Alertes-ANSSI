@@ -41,29 +41,16 @@ CERTFR-2025-ALE-007,Multiples vulnérabilités dans Ivanti Endpoint Manager Mobi
 CERTFR-2025-ALE-008,[MàJ] Vulnérabilité dans Roundcube (05 juin 2025),"[Mise à jour du 06 juin 2025] Une preuve de concept est publiquement disponible. [Publication initiale] Le 01 juin 2025, Roundcube a publié des correctifs concernant une vulnérabilité critique affectant son portail de messagerie ainsi que tous les produits l'incluant (par exemple cPanel et...","Thu, 05 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/alerte/CERTFR-2025-ALE-008/,alerte
 CERTFR-2025-AVI-0392,Multiples vulnérabilités dans Mattermost Server (13 mai 2025),De multiples vulnérabilités ont été découvertes dans Mattermost Server. Elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données et un contournement de la politique de sécurité.,"Tue, 13 May 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0392/,avis
 CERTFR-2025-AVI-0396,Multiples vulnérabilités dans les produits SAP (13 mai 2025),"De multiples vulnérabilités ont été découvertes dans les produits SAP. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une atteinte à la confidentialité des données et une injection de code indirecte à distance (XSS).","Tue, 13 May 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0396/,avis
-CERTFR-2025-AVI-0468,Vulnérabilité dans Roundcube (02 juin 2025),Une vulnérabilité a été découverte dans Roundcube Roundcube Webmail. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance.,"Mon, 02 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0468/,avis
-CERTFR-2025-AVI-0476,Vulnérabilité dans cURL  (04 juin 2025),Une vulnérabilité a été découverte dans cURL. Elle permet à un attaquant de provoquer un déni de service à distance.,"Wed, 04 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0476/,avis
-CERTFR-2025-AVI-0477,Multiples vulnérabilités dans les produits VMware (05 juin 2025),De multiples vulnérabilités ont été découvertes dans VMware NSX. Elles permettent à un attaquant de provoquer une injection de code indirecte à distance (XSS).,"Thu, 05 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0477/,avis
-CERTFR-2025-AVI-0478,Vulnérabilité dans Wireshark (05 juin 2025),Une vulnérabilité a été découverte dans Wireshark. Elle permet à un attaquant de provoquer un déni de service à distance.,"Thu, 05 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0478/,avis
-CERTFR-2025-AVI-0479,Multiples vulnérabilités dans les produits Cisco (05 juin 2025),"De multiples vulnérabilités ont été découvertes dans les produits Cisco. Certaines d'entre elles permettent à un attaquant de provoquer une élévation de privilèges, une atteinte à la confidentialité des données et une atteinte à l'intégrité des données.","Thu, 05 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0479/,avis
-CERTFR-2025-AVI-0480,Multiples vulnérabilités dans le noyau Linux de Red Hat (06 juin 2025),"De multiples vulnérabilités ont été découvertes dans le noyau Linux de Red Hat. Elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données, un déni de service et un problème de sécurité non spécifié par l'éditeur.","Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0480/,avis
-CERTFR-2025-AVI-0481,Multiples vulnérabilités dans les produits IBM (06 juin 2025),"De multiples vulnérabilités ont été découvertes dans les produits IBM. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.","Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0481/,avis
-CERTFR-2025-AVI-0482,Multiples vulnérabilités dans le noyau Linux de SUSE (06 juin 2025),"De multiples vulnérabilités ont été découvertes dans le noyau Linux de SUSE. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et un contournement de la politique de sécurité.","Fri, 06 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/,avis
-CERTFR-2025-AVI-0483,Vulnérabilité dans Mozilla VPN (10 juin 2025),Une vulnérabilité a été découverte dans Mozilla VPN. Elle permet à un attaquant de provoquer une élévation de privilèges.,"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0483/,avis
-CERTFR-2025-AVI-0484,Vulnérabilité dans les produits HPE Aruba Networking (10 juin 2025),Une vulnérabilité a été découverte dans HPE Aruba Networking Private 5G Core. Elle permet à un attaquant de provoquer une atteinte à la confidentialité des données.,"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0484/,avis
-CERTFR-2025-AVI-0485,Multiples vulnérabilités dans les produits Schneider Electric (10 juin 2025),De multiples vulnérabilités ont été découvertes dans les produits Schneider Electric. Elles permettent à un attaquant de provoquer un déni de service à distance et une injection de code indirecte à distance (XSS).,"Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0485/,avis
-CERTFR-2025-AVI-0486,Multiples vulnérabilités dans les produits Qnap (10 juin 2025),"De multiples vulnérabilités ont été découvertes dans les produits Qnap. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.","Tue, 10 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0486/,avis
-CERTFR-2025-AVI-0494,Vulnérabilité dans Elastic Kibana (11 juin 2025),Une vulnérabilité a été découverte dans Elastic Kibana. Elle permet à un attaquant de provoquer un contournement de la politique de sécurité.,"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0494/,avis
 CERTFR-2025-AVI-0495,Multiples vulnérabilités dans les produits Adobe (11 juin 2025),"De multiples vulnérabilités ont été découvertes dans les produits Adobe. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire, une élévation de privilèges et un déni de service à distance.","Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0495/,avis
 CERTFR-2025-AVI-0496,Multiples vulnérabilités dans les produits Fortinet (11 juin 2025),"De multiples vulnérabilités ont été découvertes dans les produits Fortinet. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et une atteinte à la confidentialité des données.","Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0496/,avis
 CERTFR-2025-AVI-0497,Vulnérabilité dans les processeurs Intel (11 juin 2025),Une vulnérabilité a été découverte dans les processeurs Intel. Elle permet à un attaquant de provoquer un déni de service.,"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0497/,avis
-CERTFR-2025-AVI-0488,Vulnérabilité dans Stormshield Network Security (11 juin 2025),Une vulnérabilité a été découverte dans Stormshield Network Security. Elle permet à un attaquant de provoquer un déni de service à distance.,"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0488/,avis
 CERTFR-2025-AVI-0491,Multiples vulnérabilités dans les produits Mozilla (11 juin 2025),"De multiples vulnérabilités ont été découvertes dans les produits Mozilla. Certaines d'entre elles permettent à un attaquant de provoquer un déni de service à distance, une atteinte à la confidentialité des données et un problème de sécurité non spécifié par l'éditeur.","Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0491/,avis
-CERTFR-2025-AVI-0489,Multiples vulnérabilités dans Google Chrome (11 juin 2025),De multiples vulnérabilités ont été découvertes dans Google Chrome. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.,"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0489/,avis
 CERTFR-2025-AVI-0492,Multiples vulnérabilités dans les produits Siemens (11 juin 2025),"De multiples vulnérabilités ont été découvertes dans les produits Siemens. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance.","Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0492/,avis
-CERTFR-2025-AVI-0493,Multiples vulnérabilités dans les produits Centreon (11 juin 2025),De multiples vulnérabilités ont été découvertes dans les produits Centreon. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance et un problème de sécurité non spécifié par l'éditeur.,"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0493/,avis
-CERTFR-2025-AVI-0487,Multiples vulnérabilités dans les produits SAP (11 juin 2025),"De multiples vulnérabilités ont été découvertes dans les produits SAP. Certaines d'entre elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données, une atteinte à l'intégrité des données et une falsification de requêtes côté serveur (SSRF).","Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0487/,avis
+CERTFR-2025-AVI-0488,Vulnérabilité dans Stormshield Network Security (11 juin 2025),Une vulnérabilité a été découverte dans Stormshield Network Security. Elle permet à un attaquant de provoquer un déni de service à distance.,"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0488/,avis
+CERTFR-2025-AVI-0489,Multiples vulnérabilités dans Google Chrome (11 juin 2025),De multiples vulnérabilités ont été découvertes dans Google Chrome. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.,"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0489/,avis
 CERTFR-2025-AVI-0490,Multiples vulnérabilités dans Ivanti Workspace Control (IWC) (11 juin 2025),De multiples vulnérabilités ont été découvertes dans Ivanti Workspace Control (IWC). Elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données.,"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0490/,avis
+CERTFR-2025-AVI-0487,Multiples vulnérabilités dans les produits SAP (11 juin 2025),"De multiples vulnérabilités ont été découvertes dans les produits SAP. Certaines d'entre elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données, une atteinte à l'intégrité des données et une falsification de requêtes côté serveur (SSRF).","Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0487/,avis
+CERTFR-2025-AVI-0493,Multiples vulnérabilités dans les produits Centreon (11 juin 2025),De multiples vulnérabilités ont été découvertes dans les produits Centreon. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance et un problème de sécurité non spécifié par l'éditeur.,"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0493/,avis
 CERTFR-2025-AVI-0498,Multiples vulnérabilités dans Microsoft Office (11 juin 2025),De multiples vulnérabilités ont été découvertes dans Microsoft Office. Elles permettent à un attaquant de provoquer une exécution de code arbitraire.,"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0498/,avis
 CERTFR-2025-AVI-0499,Multiples vulnérabilités dans Microsoft Windows (11 juin 2025),"De multiples vulnérabilités ont été découvertes dans Microsoft Windows. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et un déni de service à distance. Microsoft indique que la vulnérabilité CVE-2025-33053...","Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0499/,avis
 CERTFR-2025-AVI-0500,Vulnérabilité dans Microsoft .Net (11 juin 2025),Une vulnérabilité a été découverte dans Microsoft .Net. Elle permet à un attaquant de provoquer une exécution de code arbitraire à distance.,"Wed, 11 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0500/,avis
@@ -79,180 +66,16 @@ CERTFR-2025-AVI-0509,Multiples vulnérabilités dans le noyau Linux de SUSE (13 
 CERTFR-2025-AVI-0510,Multiples vulnérabilités dans le noyau Linux de Red Hat (13 juin 2025),De multiples vulnérabilités ont été découvertes dans le noyau Linux de Red Hat. Elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données et un déni de service.,"Fri, 13 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0510/,avis
 CERTFR-2025-AVI-0511,Multiples vulnérabilités dans les produits Google (13 juin 2025),"De multiples vulnérabilités ont été découvertes dans les produits Google. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une élévation de privilèges et une atteinte à la confidentialité des données.","Fri, 13 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0511/,avis
 CERTFR-2025-AVI-0512,Multiples vulnérabilités dans les produits IBM (13 juin 2025),"De multiples vulnérabilités ont été découvertes dans les produits IBM. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.","Fri, 13 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0512/,avis
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-,,,ALE
-L,,,https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0482/
+CERTFR-2025-AVI-0513,Multiples vulnérabilités dans Microsoft Edge (16 juin 2025),De multiples vulnérabilités ont été découvertes dans Microsoft Edge. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.,"Mon, 16 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0513/,avis
+CERTFR-2025-AVI-0514,Vulnérabilité dans PostgreSQL JDBC (16 juin 2025),Une vulnérabilité a été découverte dans PostgreSQL JDBC. Elle permet à un attaquant de provoquer un contournement de la politique de sécurité.,"Mon, 16 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0514/,avis
+CERTFR-2025-AVI-0515,Vulnérabilité dans Grafana (16 juin 2025),Une vulnérabilité a été découverte dans Grafana. Elle permet à un attaquant de provoquer une atteinte à la confidentialité des données.,"Mon, 16 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0515/,avis
+CERTFR-2025-AVI-0516,Multiples vulnérabilités dans Apache Tomcat (17 juin 2025),De multiples vulnérabilités ont été découvertes dans Apache Tomcat. Elles permettent à un attaquant de provoquer un déni de service à distance et un contournement de la politique de sécurité.,"Tue, 17 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0516/,avis
+CERTFR-2025-AVI-0517,Multiples vulnérabilités dans les produits Veeam (18 juin 2025),De multiples vulnérabilités ont été découvertes dans les produits Veeam. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance et une élévation de privilèges.,"Wed, 18 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0517/,avis
+CERTFR-2025-AVI-0518,Multiples vulnérabilités dans Google Chrome (18 juin 2025),De multiples vulnérabilités ont été découvertes dans Google Chrome. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.,"Wed, 18 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0518/,avis
+CERTFR-2025-AVI-0519,Multiples vulnérabilités dans Moodle (18 juin 2025),"De multiples vulnérabilités ont été découvertes dans Moodle. Certaines d'entre elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données, une injection SQL (SQLi) et une falsification de requêtes côté serveur (SSRF).","Wed, 18 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0519/,avis
+CERTFR-2025-AVI-0520,Multiples vulnérabilités dans les produits Atlassian (18 juin 2025),De multiples vulnérabilités ont été découvertes dans les produits Atlassian. Elles permettent à un attaquant de provoquer un déni de service à distance et un contournement de la politique de sécurité.,"Wed, 18 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0520/,avis
+CERTFR-2025-AVI-0521,Multiples vulnérabilités dans Synacor Zimbra Collaboration (18 juin 2025),De multiples vulnérabilités ont été découvertes dans Synacor Zimbra Collaboration. Elles permettent à un attaquant de provoquer un déni de service à distance et une injection de code indirecte à distance (XSS).,"Wed, 18 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0521/,avis
+CERTFR-2025-AVI-0522,Multiples vulnérabilités dans ClamAV (19 juin 2025),"De multiples vulnérabilités ont été découvertes dans ClamAV ClamAV. Certaines d'entre elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, un déni de service à distance et une atteinte à la confidentialité des données.","Thu, 19 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0522/,avis
+CERTFR-2025-AVI-0523,Vulnérabilité dans Cisco Meraki MX (19 juin 2025),Une vulnérabilité a été découverte dans Cisco Meraki MX. Elle permet à un attaquant de provoquer un déni de service à distance.,"Thu, 19 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0523/,avis
+CERTFR-2025-AVI-0524,Multiples vulnérabilités dans VMware Tanzu (19 juin 2025),De multiples vulnérabilités ont été découvertes dans VMware Tanzu. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.,"Thu, 19 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0524/,avis
+CERTFR-2025-AVI-0525,Multiples vulnérabilités dans Mattermost Server (19 juin 2025),De multiples vulnérabilités ont été découvertes dans Mattermost Server. Elles permettent à un attaquant de provoquer un problème de sécurité non spécifié par l'éditeur.,"Thu, 19 Jun 2025 00:00:00 +0000",https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0525/,avis
