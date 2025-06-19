@@ -1,0 +1,148 @@
+{% extends 'ml_dashboard/base.html' %}
+
+{% block title %}Prédictions ML - Dashboard ANSSI{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h4>🔮 Prédictions de Dates de Fin de Menace</h4>
+            </div>
+            <div class="card-body">
+                <button id="runPredictions" class="btn btn-success mb-3">
+                    <i class="fas fa-play"></i> Exécuter les Prédictions
+                </button>
+                <div id="predictionResults">
+                    <div class="text-center text-muted">
+                        <p>Cliquez sur "Exécuter les Prédictions" pour lancer l'analyse</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4" id="predictionStats" style="display: none;">
+    <div class="col-md-3">
+        <div class="card bg-info text-white">
+            <div class="card-body">
+                <h5>Prédictions Générées</h5>
+                <h2 id="predictionsCount">0</h2>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card bg-success text-white">
+            <div class="card-body">
+                <h5>Durée Moyenne</h5>
+                <h2 id="avgDuration">0</h2>
+                <small>jours</small>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card bg-warning text-white">
+            <div class="card-body">
+                <h5>Données d'Entraînement</h5>
+                <h2 id="trainSize">0</h2>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card bg-secondary text-white">
+            <div class="card-body">
+                <h5>À Prédire</h5>
+                <h2 id="predSize">0</h2>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.getElementById('runPredictions').addEventListener('click', function() {
+    this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Exécution en cours...';
+    this.disabled = true;
+    
+    fetch('{% url "ml_dashboard:api_predictions" %}')
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                // Afficher les statistiques
+                document.getElementById('predictionsCount').textContent = data.predictions_count;
+                document.getElementById('avgDuration').textContent = Math.round(data.avg_duration);
+                document.getElementById('trainSize').textContent = data.train_size;
+                document.getElementById('predSize').textContent = data.pred_size;
+                
+                document.getElementById('predictionStats').style.display = 'flex';
+                
+                // Afficher les résultats
+                let html = '<div class="alert alert-success"><h5>✅ Prédictions terminées avec succès !</h5></div>';
+                html += '<div class="row">';
+                html += '<div class="col-md-6">';
+                html += '<h6>📊 Résumé des Prédictions</h6>';
+                html += '<ul class="list-group">';
+                html += `<li class="list-group-item d-flex justify-content-between">
+                    <span>Prédictions générées</span>
+                    <span class="badge bg-primary">${data.predictions_count}</span>
+                </li>`;
+                html += `<li class="list-group-item d-flex justify-content-between">
+                    <span>Durée moyenne prédite</span>
+                    <span class="badge bg-success">${Math.round(data.avg_duration)} jours</span>
+                </li>`;
+                html += `<li class="list-group-item d-flex justify-content-between">
+                    <span>Données d'entraînement</span>
+                    <span class="badge bg-info">${data.train_size}</span>
+                </li>`;
+                html += '</ul>';
+                html += '</div>';
+                
+                // Afficher la distribution des durées si disponible
+                if (data.durations && data.durations.length > 0) {
+                    html += '<div class="col-md-6">';
+                    html += '<h6>📈 Distribution des Durées Prédites</h6>';
+                    
+                    // Calculer les statistiques
+                    const durations = data.durations;
+                    const min = Math.min(...durations);
+                    const max = Math.max(...durations);
+                    const median = durations.sort((a, b) => a - b)[Math.floor(durations.length / 2)];
+                    
+                    html += '<ul class="list-group">';
+                    html += `<li class="list-group-item d-flex justify-content-between">
+                        <span>Durée minimale</span>
+                        <span class="badge bg-secondary">${min} jours</span>
+                    </li>`;
+                    html += `<li class="list-group-item d-flex justify-content-between">
+                        <span>Durée maximale</span>
+                        <span class="badge bg-secondary">${max} jours</span>
+                    </li>`;
+                    html += `<li class="list-group-item d-flex justify-content-between">
+                        <span>Durée médiane</span>
+                        <span class="badge bg-secondary">${median} jours</span>
+                    </li>`;
+                    html += '</ul>';
+                    html += '</div>';
+                }
+                
+                html += '</div>';
+                
+                document.getElementById('predictionResults').innerHTML = html;
+            } else {
+                document.getElementById('predictionResults').innerHTML = 
+                    `<div class="alert alert-danger">❌ Erreur: ${data.error}</div>`;
+            }
+        })
+        .catch(error => {
+            document.getElementById('predictionResults').innerHTML = 
+                `<div class="alert alert-danger">❌ Erreur de connexion: ${error}</div>`;
+        })
+        .finally(() => {
+            document.getElementById('runPredictions').innerHTML = '<i class="fas fa-play"></i> Exécuter les Prédictions';
+            document.getElementById('runPredictions').disabled = false;
+        });
+});
+</script>
+{% endblock %}
