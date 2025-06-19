@@ -1,0 +1,11 @@
+{% extends 'ml_dashboard/base.html' %}
+
+{% block title %}Erreur - Dashboard ANSSI{% endblock %}
+
+{% block content %}
+<div class="alert alert-danger mt-4">
+    <h4>❌ Une erreur s'est produite</h4>
+    <p>{{ error }}</p>
+    <a href="{% url 'ml_dashboard:dashboard' %}" class="btn btn-primary mt-3">Retour au dashboard</a>
+</div>
+{% endblock %}

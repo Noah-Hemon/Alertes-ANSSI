@@ -1,0 +1,191 @@
+{% extends 'ml_dashboard/base.html' %}
+
+{% block title %}Clustering - Dashboard ANSSI{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header bg-success text-white">
+                <h4>🎯 Analyse de Clustering des Vulnérabilités</h4>
+            </div>
+            <div class="card-body">
+                <button id="runClustering" class="btn btn-success mb-3">
+                    <i class="fas fa-play"></i> Exécuter le Clustering
+                </button>
+                <div id="clusteringResults">
+                    <div class="text-center text-muted">
+                        <p>Cliquez sur "Exécuter le Clustering" pour lancer l'analyse</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4" id="clusteringStats" style="display: none;">
+    <div class="col-md-4">
+        <div class="card bg-primary text-white">
+            <div class="card-body">
+                <h5>Nombre de Clusters</h5>
+                <h2 id="clustersCount">0</h2>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card bg-info text-white">
+            <div class="card-body">
+                <h5>Score de Silhouette</h5>
+                <h2 id="silhouetteScore">0</h2>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card bg-secondary text-white">
+            <div class="card-body">
+                <h5>Données Analysées</h5>
+                <h2 id="dataSize">0</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4" id="clusterDetails" style="display: none;">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h5>📊 Détails des Clusters</h5>
+            </div>
+            <div class="card-body" id="clusterSummaries">
+                <!-- Les détails des clusters seront affichés ici -->
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.getElementById('runClustering').addEventListener('click', function() {
+    this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Exécution en cours...';
+    this.disabled = true;
+    
+    fetch('{% url "ml_dashboard:api_clustering" %}')
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                // Afficher les statistiques générales
+                document.getElementById('clustersCount').textContent = data.clusters_count;
+                document.getElementById('silhouetteScore').textContent = data.silhouette_score.toFixed(3);
+                document.getElementById('dataSize').textContent = data.data_size;
+                
+                document.getElementById('clusteringStats').style.display = 'flex';
+                
+                // Afficher les résultats
+                let html = '<div class="alert alert-success"><h5>✅ Clustering terminé avec succès !</h5></div>';
+                
+                // Qualité du clustering
+                const silScore = data.silhouette_score;
+                let qualityMsg = '';
+                let qualityClass = '';
+                
+                if (silScore > 0.5) {
+                    qualityMsg = 'Clustering de très bonne qualité';
+                    qualityClass = 'alert-success';
+                } else if (silScore > 0.25) {
+                    qualityMsg = 'Clustering de qualité acceptable';
+                    qualityClass = 'alert-warning';
+                } else {
+                    qualityMsg = 'Clustering de faible qualité';
+                    qualityClass = 'alert-danger';
+                }
+                
+                html += `<div class="alert ${qualityClass}">
+                    <strong>Qualité du clustering:</strong> ${qualityMsg} (Score: ${silScore.toFixed(3)})
+                </div>`;
+                
+                document.getElementById('clusteringResults').innerHTML = html;
+                
+                // Afficher les détails des clusters
+                if (data.cluster_summaries && data.cluster_summaries.length > 0) {
+                    let summariesHtml = '';
+                    
+                    // Trier les clusters par score de criticité
+                    const sortedClusters = data.cluster_summaries.sort((a, b) => b.criticality_score - a.criticality_score);
+                    
+                    sortedClusters.forEach(cluster => {
+                        const criticalityClass = cluster.criticality_score >= 70 ? 'border-danger' :
+                                               cluster.criticality_score >= 50 ? 'border-warning' :
+                                               cluster.criticality_score >= 30 ? 'border-info' : 'border-secondary';
+                        
+                        const criticalityLabel = cluster.criticality_score >= 70 ? 'PRIORITÉ MAXIMALE' :
+                                               cluster.criticality_score >= 50 ? 'PRIORITÉ ÉLEVÉE' :
+                                               cluster.criticality_score >= 30 ? 'PRIORITÉ MODÉRÉE' : 'PRIORITÉ FAIBLE';
+                        
+                        summariesHtml += `
+                        <div class="card mb-3 ${criticalityClass}">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h6 class="mb-0">🎯 Cluster ${cluster.cluster_id}</h6>
+                                <span class="badge ${cluster.criticality_score >= 70 ? 'bg-danger' : 
+                                                   cluster.criticality_score >= 50 ? 'bg-warning' : 
+                                                   cluster.criticality_score >= 30 ? 'bg-info' : 'bg-secondary'}">
+                                    ${criticalityLabel}
+                                </span>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6>📈 Métriques de Risque</h6>
+                                        <ul class="list-unstyled">
+                                            <li><strong>Taille:</strong> ${cluster.size} vulnérabilités</li>
+                                            <li><strong>Score CVSS moyen:</strong> ${cluster.avg_cvss.toFixed(1)}/10</li>
+                                            <li><strong>Score EPSS moyen:</strong> ${cluster.avg_epss.toFixed(4)}</li>
+                                            <li><strong>Score de criticité:</strong> ${cluster.criticality_score.toFixed(0)}/100</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6>🏢 Caractéristiques</h6>
+                                        <ul class="list-unstyled">
+                                            <li><strong>Vendeur principal:</strong> ${cluster.top_vendor}</li>
+                                            <li><strong>CWE principal:</strong> ${cluster.top_cwe}</li>
+                                            <li><strong>Vulnérabilités critiques:</strong> ${cluster.critical_count}</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="progress mt-3">
+                                    <div class="progress-bar ${cluster.criticality_score >= 70 ? 'bg-danger' : 
+                                                              cluster.criticality_score >= 50 ? 'bg-warning' : 
+                                                              cluster.criticality_score >= 30 ? 'bg-info' : 'bg-secondary'}" 
+                                         role="progressbar" 
+                                         style="width: ${cluster.criticality_score}%" 
+                                         aria-valuenow="${cluster.criticality_score}" 
+                                         aria-valuemin="0" 
+                                         aria-valuemax="100">
+                                        ${cluster.criticality_score.toFixed(0)}%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>`;
+                    });
+                    
+                    document.getElementById('clusterSummaries').innerHTML = summariesHtml;
+                    document.getElementById('clusterDetails').style.display = 'block';
+                }
+                
+            } else {
+                document.getElementById('clusteringResults').innerHTML = 
+                    `<div class="alert alert-danger">❌ Erreur: ${data.error}</div>`;
+            }
+        })
+        .catch(error => {
+            document.getElementById('clusteringResults').innerHTML = 
+                `<div class="alert alert-danger">❌ Erreur de connexion: ${error}</div>`;
+        })
+        .finally(() => {
+            document.getElementById('runClustering').innerHTML = '<i class="fas fa-play"></i> Exécuter le Clustering';
+            document.getElementById('runClustering').disabled = false;
+        });
+});
+</script>
+{% endblock %}
