@@ -31,8 +31,12 @@ def job():
     print("Tâche planifiée terminée.")
 
 
-schedule.every().minute.do(job)
+schedule.every().hour.do(job)
 
+print("Première exécution immédiate.")
+job()
+
+print("Tâche planifiée. En attente des déclenchements suivants...")
 
 while True:
     schedule.run_pending()
